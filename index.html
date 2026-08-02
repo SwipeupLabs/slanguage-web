@@ -1,10 +1,121 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slanguage | 怎麼說 - Speak Like a Local, Not a Textbook</title>
+
+    <!-- 核心 SEO：首頁名稱固定使用完整品牌關鍵字 -->
+    <title>Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換</title>
+    <meta name="description" content="Slanguage｜怎麼說，將生硬的課本翻譯轉換成更自然的外語在地表達，並依日常、潮流俚語與職場商務等情境切換語氣，支援 30+ 國家與地區。">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="SwipeUp Labs">
+    <meta name="application-name" content="Slanguage | 怎麼說">
+    <meta name="theme-color" content="#007AFF">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="./">
+    <!-- 完成 Google Search Console 驗證後，可將驗證 meta 標籤貼在這裡。 -->
+    <!-- App 上架後，JavaScript 會依 App Store 網址自動建立 Apple Smart App Banner。 -->
+
+    <!-- Open Graph / 社群分享 -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:site_name" content="Slanguage | 怎麼說">
+    <meta property="og:title" content="Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換">
+    <meta property="og:description" content="把課本式翻譯變成更自然的在地表達，並依日常、潮流俚語與職場商務等情境切換語氣。">
+    <!-- 製作 1200×630 分享圖後，可加入 og:image 與 twitter:image 的絕對網址。 -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換">
+    <meta name="twitter:description" content="支援 30+ 國家與地區，讓外語表達更自然、更貼近當地使用情境。">
+
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- 搜尋引擎結構化資料：內容必須與頁面上看得到的文字一致 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "#organization",
+          "name": "SwipeUp Labs",
+          "brand": {
+            "@type": "Brand",
+            "name": "Slanguage | 怎麼說"
+          },
+          "logo": "logo.png"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "#website",
+          "name": "Slanguage | 怎麼說",
+          "alternateName": ["Slanguage", "怎麼說"],
+          "inLanguage": ["zh-TW", "en"],
+          "publisher": { "@id": "#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "#slanguage-app",
+          "name": "Slanguage | 怎麼說",
+          "alternateName": "Slanguage",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "iOS, Android",
+          "inLanguage": ["zh-TW", "en"],
+          "description": "將生硬的課本翻譯轉換成更自然的外語在地表達，並依日常、潮流俚語與職場商務等情境切換語氣，支援 30+ 國家與地區。",
+          "publisher": { "@id": "#organization" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Slanguage 和一般翻譯工具有什麼不同？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "一般翻譯工具多半著重字面正確，Slanguage 更重視實際使用情境、地區差異與說話語氣，協助你把生硬句子改成更自然的在地表達。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Slanguage 可以切換哪些語氣？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "你可以依情境查看日常標準、潮流俚語、職場商務等不同表達方式，選擇更符合對象與場合的說法。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Slanguage 支援哪些語言與地區？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Slanguage 規劃支援 30+ 個國家與地區，並依不同地區的慣用語、文化與表達方式提供更貼近當地人的翻譯結果。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Slanguage 能翻譯俚語、縮寫與流行用語嗎？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Slanguage 的目標正是協助理解與產生課本較少收錄的口語、俚語與流行表達；實際結果仍會依輸入內容、語境與支援範圍而異。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Slanguage 什麼時候可以下載？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
     <style>
         :root {
             --primary: #007AFF;
@@ -13,733 +124,1352 @@
             --accent-orange: #FF9500;
             --accent-green: #34C759;
             --text-main: #1D1D1F;
-            --text-gray: #86868B;
+            --text-gray: #6E6E73;
             --bg-blur: rgba(255, 255, 255, 0.7);
-            
-            /* 手機內部專屬顏色 */
-            --color-stiff: #8e8e93;
-            --color-stiff-bg: #f2f2f7;
-            --color-standard: #34C759;
-            --color-standard-bg: #EAF9EE;
-            --color-genz: #FF9500;
-            --color-genz-bg: #FFF5E6;
-            --color-business: #007AFF;
-            --color-business-bg: #E5F1FF;
-        }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        /* 手機內部專屬顏色 */
+        --color-stiff: #8e8e93;
+        --color-stiff-bg: #f2f2f7;
+        --color-standard: #34C759;
+        --color-standard-bg: #EAF9EE;
+        --color-genz: #FF9500;
+        --color-genz-bg: #FFF5E6;
+        --color-business: #007AFF;
+        --color-business-bg: #E5F1FF;
+    }
 
-        body {
-            font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
-            background-color: #ffffff;
-            color: var(--text-main);
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        /* --- 繽紛流動背景 --- */
-        .bg-wrapper {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -2;
-            background: #fdfdfd;
-        }
+    html { scroll-behavior: smooth; }
 
-        .blob {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            filter: blur(100px);
-            opacity: 0.25;
-            z-index: -1;
-            animation: move 25s infinite alternate;
-        }
-        .blob-1 { background: var(--primary); top: -200px; right: -100px; }
-        .blob-2 { background: var(--accent-purple); bottom: -200px; left: -100px; animation-delay: -5s; }
-        .blob-3 { background: var(--accent-orange); top: 30%; left: 10%; animation-delay: -10s; }
+    body {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+        background-color: #ffffff;
+        color: var(--text-main);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.5;
+    }
 
-        @keyframes move {
-            from { transform: translate(0, 0) scale(1); }
-            to { transform: translate(100px, 100px) scale(1.1); }
-        }
+    a, button, input { font: inherit; }
+    button { color: inherit; }
+    section { scroll-margin-top: 100px; }
 
-        /* --- Navigation --- */
-        nav {
-            position: fixed;
-            top: 0; width: 100%; padding: 20px 5%;
-            display: flex; justify-content: space-between; align-items: center;
-            z-index: 1000; background: var(--bg-blur); backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-        }
+    .skip-link {
+        position: fixed; top: 12px; left: 12px; z-index: 2000;
+        padding: 10px 14px; border-radius: 12px; background: #111; color: #fff;
+        text-decoration: none; transform: translateY(-180%); transition: transform 0.2s;
+    }
+    .skip-link:focus { transform: translateY(0); }
 
-        .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.5rem; color: var(--primary); text-decoration: none; }
-        .logo img { width: 40px; height: 40px; border-radius: 10px; background: var(--primary); }
+    :focus-visible { outline: 3px solid rgba(0, 122, 255, 0.35); outline-offset: 3px; }
 
-        .lang-switch {
-            display: flex; background: #f0f0f0; padding: 4px; border-radius: 50px; cursor: pointer;
-        }
-        .lang-btn { padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 600; transition: 0.3s; }
-        .lang-btn.active { background: white; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    /* --- 繽紛流動背景 --- */
+    .bg-wrapper {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        z-index: -2;
+        background: #fdfdfd;
+    }
 
-        /* --- Hero Section --- */
-        .hero { 
-            padding: 160px 5% 60px 5%; 
-            max-width: 1020px; 
-            margin: 0 auto; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            gap: 40px; 
-            text-align: center;
-        }
-        
-        .hero-left { 
-            flex: 1;
-            max-width: 580px; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
-        }
-        
-        .hero-right { 
-            flex: 0 0 auto; 
-            display: flex; 
-            justify-content: center; 
-            animation: float 6s ease-in-out infinite;
-        }
+    .blob {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        filter: blur(100px);
+        opacity: 0.25;
+        z-index: -1;
+        animation: move 25s infinite alternate;
+    }
+    .blob-1 { background: var(--primary); top: -200px; right: -100px; }
+    .blob-2 { background: var(--accent-purple); bottom: -200px; left: -100px; animation-delay: -5s; }
+    .blob-3 { background: var(--accent-orange); top: 30%; left: 10%; animation-delay: -10s; }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
+    @keyframes move {
+        from { transform: translate(0, 0) scale(1); }
+        to { transform: translate(100px, 100px) scale(1.1); }
+    }
 
-        .hero h1 { 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-            text-align: center;
-            width: 100%;
-        }
+    /* --- Navigation --- */
+    nav {
+        position: fixed;
+        top: 0; width: 100%; padding: 14px 5%;
+        z-index: 1000; background: var(--bg-blur); backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
 
-        .hero h1.animate-fade-in { opacity: 1; transform: translateY(0); }
+    .nav-inner {
+        width: 100%; max-width: 1200px; margin: 0 auto;
+        display: flex; justify-content: space-between; align-items: center; gap: 24px;
+    }
 
-        .title-line {
-            display: inline-flex;
-            align-items: baseline;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 0 8px;
-            width: 100%;
-            color: #0A84FF;
-            font-size: clamp(2.2rem, 4.2vw, 4.5rem); 
-            font-weight: 800;
-            letter-spacing: -1px;
-            line-height: 1.25;
-            word-break: break-word;
-        }
+    .nav-actions { display: flex; align-items: center; gap: 14px; }
+    .nav-link {
+        color: var(--text-main); text-decoration: none; font-size: 0.9rem; font-weight: 700;
+        padding: 8px 10px; border-radius: 12px; transition: background 0.2s, color 0.2s;
+    }
+    .nav-link:hover { background: rgba(0,122,255,0.08); color: var(--primary); }
 
-        body.lang-en .title-line {
-            letter-spacing: -0.5px;
-        }
+    .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.5rem; color: var(--primary); text-decoration: none; }
+    .logo img { width: 40px; height: 40px; border-radius: 10px; background: var(--primary); }
 
-        .hero .text-stiff {
-            font-size: clamp(2.4rem, 5.5vw, 5.6rem); 
-            font-weight: 900;
-            letter-spacing: -2px;
-            color: #555559;
-            display: inline-block;
-        }
-        
-        .hero .text-native {
-            font-size: clamp(2.4rem, 5.5vw, 5.6rem);
-            font-weight: 900;
-            letter-spacing: -2px;
-            display: inline-block;
-            background: linear-gradient(135deg, #AF52DE 0%, #FF2D55 50%, #FF9500 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    .lang-switch {
+        display: flex; background: #f0f0f0; padding: 4px; border-radius: 50px;
+    }
+    .lang-btn {
+        padding: 6px 16px; border-radius: 50px; border: 0; background: transparent;
+        font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: 0.3s;
+    }
+    .lang-btn.active { background: white; color: var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
 
-        .hero-subtitle {
-            font-size: clamp(1rem, 1.1vw, 1.15rem);
-            line-height: 1.6;
-            color: var(--text-gray);
-            max-width: 520px;
-            font-weight: 500;
-            text-align: center;
-        }
+    /* --- Hero Section --- */
+    .hero { 
+        padding: 160px 5% 60px 5%; 
+        max-width: 1020px; 
+        margin: 0 auto; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        gap: 40px; 
+        text-align: center;
+    }
+    
+    .hero-left { 
+        flex: 1;
+        max-width: 580px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .hero-right { 
+        flex: 0 0 auto; 
+        display: flex; 
+        justify-content: center; 
+        animation: float 6s ease-in-out infinite;
+    }
 
-        /* --- 通用手機基底 --- */
-        .phone-mockup {
-            background: #000; 
-            border-radius: 36px;
-            position: relative; 
-            border: 3px solid #2c2c2e;
-            flex-shrink: 0;
-        }
-        .dynamic-island {
-            position: absolute; left: 50%; transform: translateX(-50%);
-            background: #000; border-radius: 15px; z-index: 10;
-        }
-        .phone-screen {
-            width: 100%; height: 100%; background: #f8f9fa;
-            overflow: hidden; display: flex; flex-direction: column; font-family: -apple-system, sans-serif;
-            position: relative;
-        }
-        .app-header { display: flex; justify-content: space-between; align-items: center; }
-        .app-logo-text { font-weight: 800; color: var(--primary); }
-        .app-lang-badge { background: #e5e5ea; padding: 3px 8px; border-radius: 6px; font-weight: 600; color: #3a3a3c; }
-        
-        .app-input-card { background: white; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.01); text-align: left;}
-        .app-card-tag { font-weight: 700; color: #8e8e93; text-transform: uppercase; display:block; }
-        .app-card-text { font-weight: 600; color: #555559; }
-        
-        .app-output-container { flex: 1; display: flex; flex-direction: column; overflow-y: auto; }
-        .app-output-item { 
-            background: white; border-radius: 14px; text-align: left;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.02);
-            transition: transform 0.3s;
-        }
-        .app-out-title { font-weight: 800; display: block; }
-        .app-out-phrase { font-weight: 700; color: #1c1c1e; line-height: 1.3; }
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-12px); }
+    }
 
-        /* --- 首頁右側專用：縮小尺寸樣式 --- */
-        .phone-mockup.hero-phone {
-            width: 215px; 
-            height: 440px; 
-            padding: 8px;
-            border-radius: 32px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1), inset 0 0 2px 2px rgba(255,255,255,0.2);
-        }
-        .hero-phone .dynamic-island {
-            top: 12px; width: 66px; height: 18px;
-        }
-        .hero-phone .phone-screen {
-            border-radius: 24px; padding: 36px 10px 10px;
-        }
-        .hero-phone .app-header { margin-bottom: 10px; }
-        .hero-phone .app-logo-text { font-size: 0.8rem; }
-        .hero-phone .app-lang-badge { font-size: 0.6rem; padding: 2px 5px; }
-        .hero-phone .app-input-card { padding: 8px 10px; margin-bottom: 8px; }
-        .hero-phone .app-card-tag { font-size: 0.6rem; margin-bottom: 2px; }
-        .hero-phone .app-card-text { font-size: 0.85rem; }
-        .hero-phone .app-output-container { gap: 6px; }
-        .hero-phone .app-output-item { padding: 8px 10px; border-left: 3px solid #ccc; }
-        .hero-phone .app-out-title { font-size: 0.65rem; margin-bottom: 2px; }
-        .hero-phone .app-out-phrase { font-size: 0.85rem; }
+    .hero-kicker {
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 8px 14px; border-radius: 999px;
+        color: #075FC7; background: rgba(229, 241, 255, 0.82);
+        border: 1px solid rgba(0, 122, 255, 0.14);
+        font-size: 0.88rem; font-weight: 800; letter-spacing: 0.02em;
+        box-shadow: 0 8px 24px rgba(0, 122, 255, 0.08);
+    }
 
-        /* --- 語氣示範專用：適中尺寸樣式 (避免溢出) --- */
-        .phone-mockup.comp-phone {
-            width: 280px; 
-            height: 570px; 
-            padding: 10px;
-            border-radius: 40px;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.1), inset 0 0 2px 2px rgba(255,255,255,0.2);
-        }
-        .comp-phone .dynamic-island {
-            top: 16px; width: 85px; height: 24px;
-        }
-        .comp-phone .phone-screen {
-            border-radius: 32px; padding: 48px 14px 16px;
-        }
-        .comp-phone .app-header { margin-bottom: 16px; }
-        .comp-phone .app-logo-text { font-size: 1.05rem; }
-        .comp-phone .app-lang-badge { font-size: 0.75rem; padding: 4px 10px; }
-        .comp-phone .app-input-card { padding: 10px 14px; margin-bottom: 12px; }
-        .comp-phone .app-card-tag { font-size: 0.75rem; margin-bottom: 4px; }
-        .comp-phone .app-card-text { font-size: 1.1rem; }
-        .comp-phone .app-output-container { gap: 12px; }
-        .comp-phone .app-output-item { padding: 14px 16px; border-left: 4.5px solid #ccc; }
-        .comp-phone .app-out-title { font-size: 0.85rem; margin-bottom: 4px; }
-        .comp-phone .app-out-phrase { font-size: 1.15rem; }
+    .hero h1 { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        text-align: center;
+        width: 100%;
+    }
 
-        /* --- 兩行自動輪轉跑馬燈 --- */
-        .lang-wall-wrapper { width: 100%; margin: 20px auto 60px; text-align: center; }
-        .lang-wall-desc { 
-            font-size: 1.25rem; 
-            color: #000000; 
-            font-weight: 700; 
-            max-width: 700px; 
-            margin: 0 auto 25px; 
-            line-height: 1.6; 
-            padding: 0 5%;
-        }
-        
-        .marquee-container {
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            padding: 10px 0;
-        }
-        .marquee-row {
-            display: flex;
-            width: max-content;
-        }
-        .marquee-content {
-            display: flex;
-            white-space: nowrap;
-            gap: 10px;
-            padding-right: 10px;
-        }
-        .lang-tag {
-            padding: 8px 18px; background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 100px;
-            font-size: 0.9rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            color: #3a3a3c; display: inline-block;
-        }
-        
-        .to-left .marquee-content { animation: scrollLeft 35s linear infinite; }
-        .to-right .marquee-content { animation: scrollRight 35s linear infinite; }
+    .hero h1.animate-fade-in { opacity: 1; transform: translateY(0); }
 
-        @keyframes scrollLeft {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-        @keyframes scrollRight {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(0); }
-        }
+    .title-line {
+        display: inline-flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 8px;
+        width: 100%;
+        color: #0A84FF;
+        font-size: clamp(2.2rem, 4.2vw, 4.5rem); 
+        font-weight: 800;
+        letter-spacing: -1px;
+        line-height: 1.25;
+        word-break: break-word;
+    }
 
-        /* --- 互動特色區 --- */
-        .comparison-container {
-            max-width: 1200px; margin: 0 auto 100px; padding: 0 5%;
-            display: flex; gap: 60px; align-items: center;
-        }
-        .comp-left { flex: 1.2; text-align: center; }
-        .comp-right { flex: 0.8; display: flex; justify-content: center; }
-        
-        .comp-left h2 { 
-            font-size: 2rem; 
-            font-weight: 800; 
-            margin-bottom: 15px; 
-            letter-spacing: -0.5px; 
-            white-space: nowrap; 
-            text-align: center;
-            width: 100%;
-        }
-        .comp-left .subtitle { color: var(--text-gray); font-size: 1.05rem; margin-bottom: 30px; text-align: center; }
+    body.lang-en .title-line {
+        letter-spacing: -0.5px;
+    }
 
-        .ex-selector { display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px; width: 100%; }
-        .ex-btn { 
-            padding: 16px 24px; border-radius: 20px; border: none; background: rgba(255,255,255,0.6); 
-            cursor: pointer; transition: 0.3s; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-            border: 1px solid rgba(0,0,0,0.05); backdrop-filter: blur(10px);
-            display: flex; align-items: center; justify-content: space-between;
-        }
-        .ex-btn .btn-content { line-height: 1.4; }
-        .ex-btn .prefix { font-size: 0.8rem; font-weight: 500; color: var(--text-gray); display: block; margin-bottom: 2px; }
-        .ex-btn .core-val { font-size: 1.1rem; font-weight: 700; color: var(--text-main); display: block; }
-        .ex-btn .arrow-icon { font-size: 1.2rem; color: var(--text-gray); transition: 0.3s; }
-        
-        .ex-btn.active { background: white; transform: scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.06); border-color: var(--primary); }
-        .ex-btn.active .core-val { color: var(--primary); }
-        .ex-btn.active .arrow-icon { transform: translateX(5px); color: var(--primary); }
+    .hero .text-stiff {
+        font-size: clamp(2.4rem, 5.5vw, 5.6rem); 
+        font-weight: 900;
+        letter-spacing: -2px;
+        color: #555559;
+        display: inline-block;
+    }
+    
+    .hero .text-native {
+        font-size: clamp(2.4rem, 5.5vw, 5.6rem);
+        font-weight: 900;
+        letter-spacing: -2px;
+        display: inline-block;
+        background: linear-gradient(135deg, #AF52DE 0%, #FF2D55 50%, #FF9500 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-        /* --- CTA Section --- */
-        .cta-section {
-            background: rgba(255, 255, 255, 0.65); border: 1px solid rgba(255, 255, 255, 0.8); backdrop-filter: blur(30px);
-            color: var(--text-main); padding: 80px 5%; border-radius: 50px; max-width: 1000px; margin: 0 auto 100px; text-align: center;
-            box-shadow: 0 40px 80px rgba(0,0,0,0.04);
-        }
-        .cta-section h2 { 
-            font-size: 2.2rem; font-weight: 900; margin-bottom: 20px; 
-            background: linear-gradient(135deg, #af52de 0%, #ff007f 50%, #ff9500 100%);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-            white-space: nowrap;
-            text-align: center;
-        }
-        .cta-section p { color: var(--text-gray); font-size: 1.1rem; }
+    .hero-subtitle {
+        font-size: clamp(1rem, 1.1vw, 1.15rem);
+        line-height: 1.6;
+        color: var(--text-gray);
+        max-width: 520px;
+        font-weight: 500;
+        text-align: center;
+    }
 
-        .store-btns { display: flex; justify-content: center; gap: 20px; margin: 40px 0; flex-wrap: wrap; }
-        .store-link {
-            display: flex; align-items: center; gap: 12px; background: #f2f2f7; padding: 14px 28px; border-radius: 20px; text-decoration: none; color: #1c1c1e;
-            opacity: 0.5; cursor: not-allowed; border: 1px solid rgba(0,0,0,0.03); transition: 0.3s;
-        }
-        .store-link svg { width: 24px; height: 24px; fill: #1c1c1e; }
-        .store-link span { text-align: left; line-height: 1.3; font-size: 0.85rem; color: #8e8e93; }
-        .store-link b { display: block; font-size: 1.1rem; color: #1c1c1e; }
+    /* --- 通用手機基底 --- */
+    .phone-mockup {
+        background: #000; 
+        border-radius: 36px;
+        position: relative; 
+        border: 3px solid #2c2c2e;
+        flex-shrink: 0;
+    }
+    .dynamic-island {
+        position: absolute; left: 50%; transform: translateX(-50%);
+        background: #000; border-radius: 15px; z-index: 10;
+    }
+    .phone-screen {
+        width: 100%; height: 100%; background: #f8f9fa;
+        overflow: hidden; display: flex; flex-direction: column; font-family: -apple-system, sans-serif;
+        position: relative;
+    }
+    .app-header { display: flex; justify-content: space-between; align-items: center; }
+    .app-logo-text { font-weight: 800; color: var(--primary); }
+    .app-lang-badge { background: #e5e5ea; padding: 3px 8px; border-radius: 6px; font-weight: 600; color: #3a3a3c; }
+    
+    .app-input-card { background: white; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.01); text-align: left;}
+    .app-card-tag { font-weight: 700; color: #8e8e93; text-transform: uppercase; display:block; }
+    .app-card-text { font-weight: 600; color: #555559; }
+    
+    .app-output-container { flex: 1; display: flex; flex-direction: column; overflow-y: auto; }
+    .app-output-item { 
+        background: white; border-radius: 14px; text-align: left;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.02);
+        transition: transform 0.3s;
+    }
+    .app-out-title { font-weight: 800; display: block; }
+    .app-out-phrase { font-weight: 700; color: #1c1c1e; line-height: 1.3; }
 
-        .email-box { max-width: 500px; margin: 0 auto; }
-        .input-group { display: flex; background: #f2f2f7; padding: 6px; border-radius: 22px; margin-top: 25px; border: 1px solid rgba(0,0,0,0.02); }
-        .input-group input { flex: 1; border: none; background: transparent; padding: 15px; border-radius: 15px; font-size: 1rem; outline: none; color: #000; }
-        .input-group input::placeholder { color: #a1a1a6; }
-        .submit-btn { 
-            background: linear-gradient(135deg, #007AFF 0%, #AF52DE 100%); color: white; border: none; padding: 0 32px; 
-            border-radius: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,122,255,0.2);
-        }
-        .submit-btn:disabled { background: #d1d1d6; cursor: not-allowed; box-shadow: none; }
+    /* --- 首頁右側專用：縮小尺寸樣式 --- */
+    .phone-mockup.hero-phone {
+        width: 215px; 
+        height: 440px; 
+        padding: 8px;
+        border-radius: 32px;
+        box-shadow: 0 24px 60px rgba(22, 35, 64, 0.16), inset 0 0 2px 2px rgba(255,255,255,0.2);
+    }
+    .hero-phone .dynamic-island {
+        top: 12px; width: 66px; height: 18px;
+    }
+    .hero-phone .phone-screen {
+        border-radius: 24px; padding: 36px 10px 10px;
+    }
+    .hero-phone .app-header { margin-bottom: 10px; }
+    .hero-phone .app-logo-text { font-size: 0.8rem; }
+    .hero-phone .app-lang-badge { font-size: 0.6rem; padding: 2px 5px; }
+    .hero-phone .app-input-card { padding: 8px 10px; margin-bottom: 8px; }
+    .hero-phone .app-card-tag { font-size: 0.6rem; margin-bottom: 2px; }
+    .hero-phone .app-card-text { font-size: 0.85rem; }
+    .hero-phone .app-output-container { gap: 6px; }
+    .hero-phone .app-output-item { padding: 8px 10px; border-left: 3px solid #ccc; }
+    .hero-phone .app-out-title { font-size: 0.65rem; margin-bottom: 2px; }
+    .hero-phone .app-out-phrase { font-size: 0.85rem; }
 
-        footer { text-align: center; padding: 50px; color: var(--text-gray); font-size: 0.9rem; }
+    /* --- 語氣示範專用：適中尺寸樣式 (避免溢出) --- */
+    .phone-mockup.comp-phone {
+        width: 280px; 
+        height: 570px; 
+        padding: 10px;
+        border-radius: 40px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.1), inset 0 0 2px 2px rgba(255,255,255,0.2);
+    }
+    .comp-phone .dynamic-island {
+        top: 16px; width: 85px; height: 24px;
+    }
+    .comp-phone .phone-screen {
+        border-radius: 32px; padding: 48px 14px 16px;
+    }
+    .comp-phone .app-header { margin-bottom: 16px; }
+    .comp-phone .app-logo-text { font-size: 1.05rem; }
+    .comp-phone .app-lang-badge { font-size: 0.75rem; padding: 4px 10px; }
+    .comp-phone .app-input-card { padding: 10px 14px; margin-bottom: 12px; }
+    .comp-phone .app-card-tag { font-size: 0.75rem; margin-bottom: 4px; }
+    .comp-phone .app-card-text { font-size: 1.1rem; }
+    .comp-phone .app-output-container { gap: 12px; }
+    .comp-phone .app-output-item { padding: 14px 16px; border-left: 4.5px solid #ccc; }
+    .comp-phone .app-out-title { font-size: 0.85rem; margin-bottom: 4px; }
+    .comp-phone .app-out-phrase { font-size: 1.15rem; }
 
-        /* --- Responsive Media Queries --- */
-        @media (max-width: 992px) {
-            .hero { flex-direction: column; text-align: center; padding: 130px 5% 60px; gap: 40px; }
-            .hero-left, .hero-right { width: 100%; max-width: 100%; }
-            .hero h1 { align-items: center; }
-            .hero-subtitle { margin: 0 auto; }
-            .hero-right { justify-content: center; }
-            .comparison-container { flex-direction: column; gap: 40px; }
-            .comp-left, .comp-right { width: 100%; text-align: center; }
-            .ex-btn { text-align: left; }
-            .comp-left h2 { font-size: 1.4rem; }
-            .cta-section h2 { font-size: 1.4rem; }
-        }
-        
-        @media (max-width: 768px) {
-            .title-line { font-size: clamp(2.3rem, 7.5vw, 3.5rem); font-weight: 900; } 
-            .hero .text-stiff, .hero .text-native { font-size: clamp(2.8rem, 11vw, 4.6rem); } 
-            .input-group { flex-direction: column; background: #f2f2f7; padding: 10px; border-radius: 22px; }
-            .input-group input { margin-bottom: 8px; background: white; border-radius: 14px; width: 100%; }
-            .submit-btn { height: 52px; border-radius: 14px; width: 100%; }
-        }
-    </style>
+    /* --- 兩行自動輪轉跑馬燈 --- */
+    .lang-wall-wrapper { width: 100%; margin: 20px auto 60px; text-align: center; }
+    .lang-wall-desc { 
+        font-size: 1.25rem; 
+        color: #000000; 
+        font-weight: 700; 
+        max-width: 700px; 
+        margin: 0 auto 25px; 
+        line-height: 1.6; 
+        padding: 0 5%;
+    }
+    
+    .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 0;
+    }
+    .marquee-row {
+        display: flex;
+        width: max-content;
+    }
+    .marquee-content {
+        display: flex;
+        white-space: nowrap;
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .lang-tag {
+        padding: 8px 18px; background: white; border: 1px solid rgba(0,0,0,0.06); border-radius: 100px;
+        font-size: 0.9rem; font-weight: 600; box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        color: #3a3a3c; display: inline-block;
+    }
+    
+    .to-left .marquee-content { animation: scrollLeft 35s linear infinite; }
+    .to-right .marquee-content { animation: scrollRight 35s linear infinite; }
+
+    @keyframes scrollLeft {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+    @keyframes scrollRight {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(0); }
+    }
+
+    /* --- 互動特色區 --- */
+    .comparison-container {
+        max-width: 1200px; margin: 0 auto 100px; padding: 0 5%;
+        display: flex; gap: 60px; align-items: center;
+    }
+    .comp-left { flex: 1.2; text-align: center; }
+    .comp-right { flex: 0.8; display: flex; justify-content: center; }
+    
+    .comp-left h2 { 
+        font-size: 2rem; 
+        font-weight: 800; 
+        margin-bottom: 15px; 
+        letter-spacing: -0.5px; 
+        white-space: nowrap; 
+        text-align: center;
+        width: 100%;
+    }
+    .comp-left .subtitle { color: var(--text-gray); font-size: 1.05rem; margin-bottom: 30px; text-align: center; }
+
+    .ex-selector { display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px; width: 100%; }
+    .ex-btn { 
+        padding: 16px 24px; border-radius: 20px; border: none; background: rgba(255,255,255,0.6); 
+        cursor: pointer; transition: 0.3s; text-align: left; box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        border: 1px solid rgba(0,0,0,0.05); backdrop-filter: blur(10px);
+        display: flex; align-items: center; justify-content: space-between;
+    }
+    .ex-btn .btn-content { line-height: 1.4; }
+    .ex-btn .prefix { font-size: 0.8rem; font-weight: 500; color: var(--text-gray); display: block; margin-bottom: 2px; }
+    .ex-btn .core-val { font-size: 1.1rem; font-weight: 700; color: var(--text-main); display: block; }
+    .ex-btn .arrow-icon { font-size: 1.2rem; color: var(--text-gray); transition: 0.3s; }
+    
+    .ex-btn.active { background: white; transform: scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.06); border-color: var(--primary); }
+    .ex-btn.active .core-val { color: var(--primary); }
+    .ex-btn.active .arrow-icon { transform: translateX(5px); color: var(--primary); }
+
+    /* --- 產品價值 / SEO 文字區 --- */
+    .content-section {
+        max-width: 1120px; margin: 0 auto 100px; padding: 0 5%;
+    }
+
+    .section-heading { max-width: 780px; margin: 0 auto 38px; text-align: center; }
+    .section-eyebrow {
+        display: inline-block; margin-bottom: 12px; color: var(--primary);
+        font-size: 0.82rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+    }
+    .section-heading h2 {
+        font-size: clamp(1.9rem, 3.4vw, 3rem); font-weight: 900;
+        line-height: 1.2; letter-spacing: -1px; margin-bottom: 16px;
+    }
+    .section-heading p { color: var(--text-gray); font-size: 1.05rem; line-height: 1.8; }
+
+    .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .feature-card {
+        min-height: 220px; padding: 28px; border-radius: 28px;
+        background: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.92);
+        box-shadow: 0 18px 50px rgba(30, 45, 75, 0.07); backdrop-filter: blur(24px);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 26px 60px rgba(30,45,75,0.11); }
+    .feature-icon {
+        width: 46px; height: 46px; display: grid; place-items: center; margin-bottom: 20px;
+        border-radius: 15px; font-size: 1.35rem; background: linear-gradient(135deg, #E5F1FF, #F7EAFE);
+    }
+    .feature-card h3 { font-size: 1.15rem; font-weight: 800; margin-bottom: 10px; }
+    .feature-card p { color: var(--text-gray); font-size: 0.96rem; line-height: 1.75; }
+
+    /* --- 首屏下載按鈕 --- */
+    .hero-actions {
+        display: flex; justify-content: center; align-items: center; gap: 12px;
+        flex-wrap: wrap; width: 100%;
+    }
+    .primary-cta, .secondary-cta, .share-button {
+        min-height: 50px; display: inline-flex; align-items: center; justify-content: center;
+        gap: 9px; padding: 0 22px; border-radius: 16px; text-decoration: none;
+        font-weight: 800; border: 0; cursor: pointer; transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .primary-cta {
+        color: #fff; background: linear-gradient(135deg, #007AFF, #AF52DE);
+        box-shadow: 0 12px 28px rgba(0, 122, 255, .24);
+    }
+    .primary-cta:hover, .share-button:hover { transform: translateY(-2px); }
+    .secondary-cta { color: var(--text-main); background: rgba(255,255,255,.78); border: 1px solid rgba(0,0,0,.07); }
+    .secondary-cta:hover { background: #fff; transform: translateY(-2px); }
+    .hero-proof { color: var(--text-gray); font-size: .86rem; font-weight: 600; }
+
+    /* --- 使用情境 / SEO 內容 --- */
+    .use-case-section { max-width: 1120px; margin: 0 auto 100px; padding: 0 5%; }
+    .use-case-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .use-case-card {
+        padding: 26px; border-radius: 26px; background: rgba(255,255,255,.78);
+        border: 1px solid rgba(0,0,0,.055); box-shadow: 0 16px 44px rgba(30,45,75,.06);
+    }
+    .use-case-card h3 { font-size: 1.12rem; font-weight: 850; margin-bottom: 9px; }
+    .use-case-card p { color: var(--text-gray); line-height: 1.75; }
+    .use-case-tag {
+        display: inline-flex; margin-bottom: 14px; padding: 6px 10px; border-radius: 999px;
+        background: var(--primary-light); color: #075FC7; font-size: .76rem; font-weight: 800;
+    }
+    .steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+    .step-card { padding: 20px; border-radius: 22px; background: rgba(245,247,252,.78); text-align: left; }
+    .step-number { display: block; color: var(--primary); font-size: .8rem; font-weight: 900; margin-bottom: 7px; }
+    .step-card strong { display: block; margin-bottom: 6px; }
+    .step-card p { color: var(--text-gray); font-size: .9rem; line-height: 1.65; }
+
+    /* --- FAQ --- */
+    .faq-section {
+        max-width: 920px; margin: 0 auto 100px; padding: 0 5%;
+    }
+    .faq-list { display: grid; gap: 14px; }
+    .faq-item {
+        background: rgba(255,255,255,0.78); border: 1px solid rgba(0,0,0,0.055);
+        border-radius: 22px; box-shadow: 0 12px 36px rgba(30,45,75,0.055);
+        overflow: hidden; backdrop-filter: blur(20px);
+    }
+    .faq-item summary {
+        list-style: none; cursor: pointer; padding: 22px 62px 22px 24px;
+        position: relative; font-size: 1.02rem; font-weight: 800; line-height: 1.5;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+        content: '+'; position: absolute; right: 24px; top: 50%; transform: translateY(-50%);
+        width: 28px; height: 28px; display: grid; place-items: center;
+        border-radius: 50%; color: var(--primary); background: var(--primary-light);
+        font-size: 1.15rem; transition: transform 0.2s ease;
+    }
+    .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+    .faq-answer { padding: 0 24px 22px; color: var(--text-gray); line-height: 1.8; }
+
+    .privacy-note { margin-top: 14px; color: var(--text-gray); font-size: 0.82rem !important; line-height: 1.6; }
+
+    /* --- CTA Section --- */
+    .cta-section {
+        background: rgba(255, 255, 255, 0.65); border: 1px solid rgba(255, 255, 255, 0.8); backdrop-filter: blur(30px);
+        color: var(--text-main); padding: 80px 5%; border-radius: 50px; max-width: 1000px; margin: 0 auto 100px; text-align: center;
+        box-shadow: 0 40px 80px rgba(0,0,0,0.04);
+    }
+    .cta-section h2 { 
+        font-size: 2.2rem; font-weight: 900; margin-bottom: 20px; 
+        background: linear-gradient(135deg, #af52de 0%, #ff007f 50%, #ff9500 100%);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .cta-section p { color: var(--text-gray); font-size: 1.1rem; }
+
+    .store-btns { display: flex; justify-content: center; gap: 20px; margin: 40px 0; flex-wrap: wrap; }
+    .store-link {
+        display: flex; align-items: center; gap: 12px; background: #f2f2f7; padding: 14px 28px; border-radius: 20px; text-decoration: none; color: #1c1c1e;
+        border: 1px solid rgba(0,0,0,0.03); transition: transform .2s, box-shadow .2s, opacity .2s;
+    }
+    .store-link:not(.is-disabled):hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(30,45,75,.12); }
+    .store-link.is-disabled { opacity: 0.52; cursor: pointer; }
+    .store-link svg { width: 24px; height: 24px; fill: #1c1c1e; }
+    .store-link span { text-align: left; line-height: 1.3; font-size: 0.85rem; color: #8e8e93; }
+    .store-link b { display: block; font-size: 1.1rem; color: #1c1c1e; }
+
+    .email-box { max-width: 500px; margin: 0 auto; }
+    .input-group { display: flex; background: #f2f2f7; padding: 6px; border-radius: 22px; margin-top: 25px; border: 1px solid rgba(0,0,0,0.02); }
+    .input-group input { flex: 1; border: none; background: transparent; padding: 15px; border-radius: 15px; font-size: 1rem; outline: none; color: #000; }
+    .input-group input::placeholder { color: #a1a1a6; }
+    .submit-btn { 
+        background: linear-gradient(135deg, #007AFF 0%, #AF52DE 100%); color: white; border: none; padding: 0 32px; 
+        border-radius: 16px; font-weight: 700; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 15px rgba(0,122,255,0.2);
+    }
+    .submit-btn:disabled { background: #d1d1d6; cursor: not-allowed; box-shadow: none; }
+    .form-status { min-height: 24px; margin-top: 10px; font-size: .88rem; font-weight: 700; color: var(--text-gray); }
+    .form-status.success { color: #16833B; }
+    .form-status.error { color: #C5221F; }
+    .cta-utility { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    .share-button { min-height: 44px; padding: 0 17px; background: #fff; color: var(--primary); border: 1px solid rgba(0,122,255,.15); }
+    .launch-badge { display: inline-flex; align-items: center; gap: 7px; margin-bottom: 14px; padding: 7px 12px; border-radius: 999px; background: #EAF9EE; color: #16833B; font-size: .8rem; font-weight: 850; }
+    .launch-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #34C759; box-shadow: 0 0 0 5px rgba(52,199,89,.13); }
+
+    .install-bar {
+        position: fixed; left: 50%; bottom: 18px; z-index: 1200; transform: translateX(-50%);
+        width: min(720px, calc(100% - 28px)); display: flex; align-items: center; gap: 12px;
+        padding: 11px 12px 11px 14px; border-radius: 22px; background: rgba(255,255,255,.92);
+        border: 1px solid rgba(0,0,0,.08); box-shadow: 0 20px 55px rgba(24,39,75,.2); backdrop-filter: blur(24px);
+        transition: opacity .25s, transform .25s, visibility .25s;
+    }
+    .install-bar.hidden { opacity: 0; visibility: hidden; transform: translate(-50%, 18px); }
+    .install-icon { width: 44px; height: 44px; border-radius: 12px; object-fit: cover; background: var(--primary); flex: 0 0 auto; }
+    .install-copy { min-width: 0; flex: 1; text-align: left; }
+    .install-copy strong { display: block; font-size: .95rem; }
+    .install-copy span { display: block; color: var(--text-gray); font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .install-button { min-height: 42px; padding: 0 16px; border-radius: 14px; border: 0; color: #fff; background: linear-gradient(135deg,#007AFF,#AF52DE); font-weight: 850; cursor: pointer; white-space: nowrap; }
+
+    footer { text-align: center; padding: 50px 50px 110px; color: var(--text-gray); font-size: 0.9rem; }
+
+    /* --- Responsive Media Queries --- */
+    @media (max-width: 992px) {
+        .hero { flex-direction: column; text-align: center; padding: 130px 5% 60px; gap: 40px; }
+        .hero-left, .hero-right { width: 100%; max-width: 100%; }
+        .hero h1 { align-items: center; }
+        .hero-subtitle { margin: 0 auto; }
+        .hero-right { justify-content: center; }
+        .comparison-container { flex-direction: column; gap: 40px; }
+        .comp-left, .comp-right { width: 100%; text-align: center; }
+        .ex-btn { text-align: left; }
+        .comp-left h2 { font-size: 1.4rem; }
+        .cta-section h2 { font-size: 1.4rem; }
+        .feature-grid { grid-template-columns: 1fr; }
+        .feature-card { min-height: 0; }
+        .use-case-grid { grid-template-columns: 1fr; }
+        .steps-grid { grid-template-columns: 1fr; }
+    }
+    
+    @media (max-width: 768px) {
+        .title-line { font-size: clamp(2.3rem, 7.5vw, 3.5rem); font-weight: 900; } 
+        .hero .text-stiff, .hero .text-native { font-size: clamp(2.8rem, 11vw, 4.6rem); } 
+        .input-group { flex-direction: column; background: #f2f2f7; padding: 10px; border-radius: 22px; }
+        .input-group input { margin-bottom: 8px; background: white; border-radius: 14px; width: 100%; }
+        .submit-btn { height: 52px; border-radius: 14px; width: 100%; }
+        .nav-link { display: none; }
+        .logo { font-size: 1.2rem; gap: 9px; }
+        .logo img { width: 36px; height: 36px; }
+        .lang-btn { padding: 6px 12px; }
+        .section-heading h2 { letter-spacing: -0.5px; }
+        .faq-item summary { padding-left: 20px; font-size: 0.98rem; }
+        .faq-answer { padding-left: 20px; padding-right: 20px; }
+        .hero-actions { flex-direction: column; }
+        .primary-cta, .secondary-cta { width: 100%; max-width: 360px; }
+        .install-copy span { display: none; }
+        .install-bar { bottom: 10px; }
+        .install-button { padding: 0 13px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    }
+</style>
+
 </head>
 <body>
 
-    <div class="bg-wrapper">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
+<a class="skip-link" href="#main-content">跳到主要內容</a>
 
-    <nav>
-        <a href="#" class="logo">
-            <img src="logo.png" alt="S" onerror="this.style.background='#007AFF'"> 
+<div class="bg-wrapper" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+</div>
+
+<nav aria-label="主要導覽">
+    <div class="nav-inner">
+        <a href="#top" class="logo" aria-label="Slanguage 首頁">
+            <img src="logo.png" alt="Slanguage App 圖示" width="40" height="40" onerror="this.style.background='#007AFF'"> 
             Slanguage
         </a>
-        <div class="lang-switch" onclick="toggleLang()">
-            <div id="btn-zh" class="lang-btn active">中文</div>
-            <div id="btn-en" class="lang-btn">EN</div>
-        </div>
-    </nav>
-
-    <section class="hero">
-        <div class="hero-left">
-            <h1 id="h-title"></h1>
-            <div class="hero-subtitle" id="h-sub-elements"></div>
-        </div>
-        <div class="hero-right">
-            <div class="phone-mockup hero-phone">
-                <div class="dynamic-island"></div>
-                <div class="phone-screen">
-                    <div class="app-header">
-                        <span class="app-logo-text">Slanguage</span>
-                        <span class="app-lang-badge">⇄ English</span>
-                    </div>
-                    <div class="app-input-card">
-                        <span class="app-input-tag" id="hero-input-tag" style="font-weight: 700; color: #8e8e93; text-transform: uppercase; display:block; font-size: 0.6rem; margin-bottom: 2px;">課本教你的</span>
-                        <div class="app-card-text">I understand.</div>
-                    </div>
-                    <div class="app-output-container">
-                        <div class="app-output-item" style="border-left-color: var(--color-standard)">
-                            <span class="app-out-title" style="color: var(--color-standard)" id="hero-lbl-standard">日常標準</span>
-                            <span class="app-out-phrase">I got it. / Understood.</span>
-                        </div>
-                        <div class="app-output-item" style="border-left-color: var(--color-genz); background: var(--color-genz-bg);">
-                            <span class="app-out-title" style="color: var(--color-genz)" id="hero-lbl-genz">潮流俚語 🔥</span>
-                            <span class="app-out-phrase">Bet. / I feel you.</span>
-                        </div>
-                        <div class="app-output-item" style="border-left-color: var(--color-business)">
-                            <span class="app-out-title" style="color: var(--color-business)" id="hero-lbl-business">職場商務</span>
-                            <span class="app-out-phrase">Noted with thanks.</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="nav-actions">
+            <a href="#features" class="nav-link" id="nav-features">功能特色</a>
+            <a href="#faq" class="nav-link" id="nav-faq">常見問題</a>
+            <a href="#download" class="nav-link" id="nav-download">下載 App</a>
+            <div class="lang-switch" role="group" aria-label="切換網站語言">
+                <button type="button" id="btn-zh" class="lang-btn active" onclick="setLang('zh')" aria-pressed="true">中文</button>
+                <button type="button" id="btn-en" class="lang-btn" onclick="setLang('en')" aria-pressed="false">EN</button>
             </div>
         </div>
-    </section>
-
-    <div class="lang-wall-wrapper">
-        <p class="lang-wall-desc" id="h-desc"></p>
-        <div class="marquee-container" id="marquee-container">
-            </div>
     </div>
+</nav>
 
-    <section class="comparison-container">
-        <div class="comp-left">
-            <h2 id="comp-title">一鍵切換，掌控說話語氣</h2>
-            <p class="subtitle" id="comp-subtitle">點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：</p>
-            
-            <div class="ex-selector">
-                <button class="ex-btn active" onclick="showEx(0, this)">
-                    <div class="btn-content">
-                        <span class="prefix" id="p-1">情境</span>
-                        <span class="core-val" id="cv-1">表達理解、知道了</span>
-                    </div>
-                    <span class="arrow-icon">→</span>
-                </button>
-                <button class="ex-btn" onclick="showEx(1, this)">
-                    <div class="btn-content">
-                        <span class="prefix" id="p-2">情境</span>
-                        <span class="core-val" id="cv-2">想離開某個地方</span>
-                    </div>
-                    <span class="arrow-icon">→</span>
-                </button>
-                <button class="ex-btn" onclick="showEx(2, this)">
-                    <div class="btn-content">
-                        <span class="prefix" id="p-3">情境</span>
-                        <span class="core-val" id="cv-3">稱讚衣服很好看</span>
-                    </div>
-                    <span class="arrow-icon">→</span>
-                </button>
-            </div>
+<main id="main-content">
+<section class="hero" id="top">
+    <div class="hero-left">
+        <p class="hero-kicker" id="hero-kicker">Slanguage | 怎麼說</p>
+        <h1 id="h-title">
+            <span class="title-line">不再說 <span class="text-stiff">死板</span> 的語言</span>
+            <span class="title-line">像個 <span class="text-native">母語者</span> 在對話</span>
+        </h1>
+        <p class="hero-subtitle" id="h-sub-elements">解鎖課本學不到的道地口語、潮流俚語與職場溝通，讓你的語言表達更貼近當地人的真實使用情境。</p>
+        <div class="hero-actions">
+            <a class="primary-cta" id="hero-primary-cta" href="#download" data-track="hero_primary">搶先取得 App</a>
+            <a class="secondary-cta" id="hero-secondary-cta" href="#comparison" data-track="hero_demo">看看翻譯示範</a>
         </div>
-        
-        <div class="comp-right">
-            <div class="phone-mockup comp-phone">
-                <div class="dynamic-island"></div>
-                <div class="phone-screen" id="interactive-phone-screen">
-                    </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <h2 id="cta-title">即將在各大商店上架</h2>
-        <p id="cta-desc">留下 Email，在 App 正式上架當天第一時間收到通知！</p>
-        
-        <div class="store-btns">
-            <div class="store-link">
-                <svg viewBox="0 0 24 24"><path d="M17.5,12.5c0-2.3,1.9-3.4,2-3.5c-1.1-1.5-2.7-1.8-3.3-1.8c-1.4-0.1-2.8,0.8-3.6,0.8c-0.7,0-1.9-0.8-3.1-0.8c-1.5,0-3,0.9-3.8,2.2c-1.6,2.7-0.4,6.7,1.1,9c0.8,1.1,1.7,2.3,2.9,2.3c1.1,0,1.5-0.7,2.9-0.7c1.4,0,1.8,0.7,2.9,0.7c1.2,0,2-1.1,2.8-2.2c0.9-1.3,1.2-2.5,1.2-2.6C21.5,15.7,17.5,14.2,17.5,12.5z M14.6,6.3c0.6-0.8,1-1.9,0.9-2.9c-0.9,0-2,0.6-2.6,1.4c-0.6,0.7-1,1.8-0.9,2.8C13,7.7,14,7.1,14.6,6.3z"/></svg>
-                <span id="store-apple"><b>App Store</b></span>
-            </div>
-            <div class="store-link">
-                <svg viewBox="0 0 24 24"><path d="M3.6,20.5l14.2-8L3.6,4.5c-0.3-0.2-0.6-0.1-0.6,0.2v15.5C3,20.6,3.3,20.7,3.6,20.5z M18.4,12l2.6-1.5c0.4-0.2,0.4-0.8,0-1L3.6,1.1C3.3,0.9,3,1.1,3,1.4v0.9l14.2,8L18.4,12z"/></svg>
-                <span id="store-google"><b>Google Play</b></span>
-            </div>
-        </div>
-
-        <div class="email-box">
-            <form id="waitlistForm" class="input-group">
-                <input type="email" id="emailField" required>
-                <button type="submit" class="submit-btn" id="btn-submit">通知我</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Slanguage. Not just words, but the vibe.</p>
-    </footer>
-
-    <script>
-        let lang = 'zh';
-
-        // 33 個國家平分
-        const row1Zh = ["🇹🇼 台灣", "🇺🇸 美國", "🇬🇧 英國", "🇦🇺 澳洲", "🇨🇦 加拿大", "🇨🇳 中國", "🇭🇰 香港", "🇯🇵 日本", "🇰🇷 韓國", "🇻🇳 越南", "🇹🇭 泰國", "🇲🇾 馬來西亞", "🇸🇬 新加坡", "🇪🇸 西班牙", "🇲🇽 墨西哥", "🇦🇪 阿拉伯聯合大公國", "🇲🇦 摩洛哥"];
-        const row2Zh = ["🇵🇹 葡萄牙", "🇧🇷 巴西", "🇮🇳 印度", "🇮🇩 印度尼西亞", "🇷🇺 俄羅斯", "🇵🇭 菲律賓", "🇩🇪 德國", "🇫🇷 法國", "🇹👑 土耳其", "🇮🇹 義大利", "🇵🇱 波蘭", "🇳🇱 荷蘭", "🇬🇷 希臘", "🇨🇿 捷克", "🇸🇪 瑞典", "🇳🇴 挪威"];
-
-        const row1En = ["🇹🇼 Taiwan", "🇺🇸 USA", "🇬🇧 UK", "🇦🇺 Australia", "🇨🇦 Canada", "🇨🇳 China", "🇭🇰 Hong Kong", "🇯🇵 Japan", "🇰🇷 South Korea", "🇻🇳 Vietnam", "🇹🇭 Thailand", "🇲🇾 Malaysia", "🇸🇬 Singapore", "🇪🇸 Spain", "🇲🇽 Mexico", "🇦🇪 UAE", "🇲🇦 Morocco"];
-        const row2En = ["🇵🇹 Portugal", "🇧🇷 Brazil", "🇮🇳 India", "🇮🇩 Indonesia", "🇷🇺 Russia", "🇵🇭 Philippines", "🇩🇪 Germany", "🇫🇷 France", "🇹🇷 Turkey", "🇮🇹 Italy", "🇵🇱 Poland", "🇳🇱 Netherlands", "🇬🇷 Greece", "🇨🇿 Czechia", "🇸🇪 Sweden", "🇳🇴 Norway"];
-
-        const translations = {
-            zh: {
-                title: `
-                    <div class="title-line">不再說 <span class="text-stiff">死板</span> 的語言</div>
-                    <div class="title-line">像個 <span class="text-native">母語者</span> 在對話</div>
-                `,
-                subtitle: "解鎖課本學不到的道地口語、潮流俚語與職場溝通，讓你的語言表達一秒融入當地人的生活圈，聽起來更像在地人。",
-                desc: "支援翻譯 30+ 個國家。讓你從課本裡的「機器人」翻譯成最道地的「在地人。」",
-                compTitle: "一鍵切換，掌控說話語氣",
-                compSubtitle: "點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：",
-                ctaTitle: "即將在各大商店上架",
-                ctaDesc: "留下 Email，在 App 正式上架當天第一時間收到通知！",
-                btnSub: "通知我",
-                btnSending: "傳送中...",
-                alertSuccess: "預約成功！正式上架時我們將會第一時間通知您。",
-                alertFail: "傳送失敗，請確認網路連線或稍後再試。",
-                placeholder: "請輸入您的 Email 信箱",
-                storeExpect: "[敬請期待]",
-                labels: ["課本教你的", "日常標準", "潮流俚語 🔥", "職場商務"],
-                prefixes: ["情境", "情境", "情境"],
-                exTitle: ["表達理解、知道了", "想離開某個地方", "稱讚衣服很好看"],
-                row1: row1Zh,
-                row2: row2Zh,
-                data: [
-                    { stiff: "I understand.", standard: "I got it. / Understood.", genz: "Bet. / I feel you.", business: "Noted with thanks." },
-                    { stiff: "I am leaving now.", standard: "I should get going.", genz: "I'm gonna bounce.", business: "I must take my leave now." },
-                    { stiff: "You look nice.", standard: "You look great today!", genz: "Your fit is fire!", business: "You look exceptionally sharp." }
-                ]
-            },
-            en: {
-                title: `
-                    <div class="title-line">Stop Speaking</div>
-                    <div class="title-line"><span class="text-stiff">Stiff</span> Textbooks,</div>
-                    <div class="title-line">Talk Like a</div>
-                    <div class="title-line"><span class="text-native">True Native</span></div>
-                `,
-                subtitle: "Unlock authentic expressions, casual slang, and workplace communication untaught in textbooks. Seamlessly blend into local circles instantly and sound more like a native.",
-                desc: "Supporting translation for 30+ countries. Transform yourself from a classroom 'robot' into the most authentic 'local.'",
-                compTitle: "One Tap to Switch Tones",
-                compSubtitle: "Click the scenarios below to see how Slanguage dynamic UI transforms expressions:",
-                ctaTitle: "Launching Soon",
-                ctaDesc: "Leave your email to get notified immediately on launch day!",
-                btnSub: "Notify Me",
-                btnSending: "Sending...",
-                alertSuccess: "Success! You are on the list.",
-                alertFail: "Something went wrong. Please try again.",
-                placeholder: "Enter your email address",
-                storeExpect: "[Coming Soon]",
-                labels: ["Your Input", "Standard", "Gen Z Slang 🔥", "Business"],
-                prefixes: ["Topic", "Topic", "Topic"],
-                exTitle: ["Expressing Understanding", "Wanting to Leave", "Complimenting an Outfit"],
-                row1: row1En,
-                row2: row2En,
-                data: [
-                    { stiff: "I understand.", standard: "I got it. / Understood.", genz: "Bet. / I feel you.", business: "Noted with thanks." },
-                    { stiff: "I am leaving now.", standard: "I should get going.", genz: "I'm gonna bounce.", business: "I must take my leave now." },
-                    { stiff: "You look nice.", standard: "You look great today!", genz: "Your fit is fire!", business: "You look exceptionally sharp." }
-                ]
-            }
-        };
-
-        function toggleLang() {
-            lang = lang === 'zh' ? 'en' : 'zh';
-            updateUI();
-        }
-
-        function renderMarquee(r1, r2) {
-            const container = document.getElementById('marquee-container');
-            container.innerHTML = `
-                <div class="marquee-row to-left">
-                    <div class="marquee-content">${r1.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
-                    <div class="marquee-content" aria-hidden="true">${r1.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
-                </div>
-                <div class="marquee-row to-right">
-                    <div class="marquee-content">${r2.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
-                    <div class="marquee-content" aria-hidden="true">${r2.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
-                </div>
-            `;
-        }
-
-        function updateUI() {
-            const t = translations[lang];
-            
-            document.body.className = `lang-${lang}`;
-            
-            document.getElementById('h-title').innerHTML = t.title;
-            document.getElementById('h-desc').innerText = t.desc;
-            document.getElementById('comp-title').innerText = t.compTitle;
-            document.getElementById('comp-subtitle').innerText = t.compSubtitle;
-            document.getElementById('cta-title').innerText = t.ctaTitle;
-            document.getElementById('cta-desc').innerText = t.ctaDesc;
-            document.getElementById('btn-submit').innerText = t.btnSub;
-            
-            document.getElementById('h-sub-elements').innerText = t.subtitle;
-
-            document.getElementById('emailField').placeholder = t.placeholder;
-            document.getElementById('store-apple').innerHTML = `${t.storeExpect} <b>App Store</b>`;
-            document.getElementById('store-google').innerHTML = `${t.storeExpect} <b>Google Play</b>`;
-            
-            document.getElementById('hero-input-tag').innerText = t.labels[0];
-            document.getElementById('hero-lbl-standard').innerText = t.labels[1];
-            document.getElementById('hero-lbl-genz').innerText = t.labels[2];
-            document.getElementById('hero-lbl-business').innerText = t.labels[3];
-            
-            for (let i = 1; i <= 3; i++) {
-                document.getElementById(`p-${i}`).innerText = t.prefixes[i-1];
-                document.getElementById(`cv-${i}`).innerText = t.exTitle[i-1];
-            }
-            
-            document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
-            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-            
-            renderMarquee(t.row1, t.row2);
-            
-            const activeBtn = document.querySelector('.ex-btn.active');
-            const btns = Array.from(document.querySelectorAll('.ex-btn'));
-            const currentIdx = btns.indexOf(activeBtn);
-            showEx(currentIdx >= 0 ? currentIdx : 0, activeBtn);
-        }
-
-        function showEx(idx, btn) {
-            document.querySelectorAll('.ex-btn').forEach(b => b.classList.remove('active'));
-            if(btn) btn.classList.add('active');
-
-            const t = translations[lang];
-            const item = t.data[idx];
-            
-            const phoneScreen = document.getElementById('interactive-phone-screen');
-            phoneScreen.innerHTML = `
+        <p class="hero-proof" id="hero-proof">支援 iOS 與 Android｜上架通知免費訂閱</p>
+    </div>
+    <div class="hero-right">
+        <div class="phone-mockup hero-phone">
+            <div class="dynamic-island"></div>
+            <div class="phone-screen">
                 <div class="app-header">
                     <span class="app-logo-text">Slanguage</span>
                     <span class="app-lang-badge">⇄ English</span>
                 </div>
-                <div class="app-input-card" style="padding: 10px 14px; margin-bottom: 12px;">
-                    <span class="app-card-tag" style="font-size: 0.75rem; margin-bottom: 4px;">${t.labels[0]}</span>
-                    <div class="app-card-text" style="font-size: 1.1rem;">${item.stiff}</div>
+                <div class="app-input-card">
+                    <span class="app-input-tag" id="hero-input-tag" style="font-weight: 700; color: #8e8e93; text-transform: uppercase; display:block; font-size: 0.6rem; margin-bottom: 2px;">課本教你的</span>
+                    <div class="app-card-text">I understand.</div>
                 </div>
                 <div class="app-output-container">
-                    <div class="app-output-item" style="border-left-color: var(--color-standard); padding: 14px 16px; border-left-width: 4.5px;">
-                        <span class="app-out-title" style="color: var(--color-standard); font-size: 0.85rem; margin-bottom: 4px;">${t.labels[1]}</span>
-                        <span class="app-out-phrase" style="font-size: 1.15rem;">${item.standard}</span>
+                    <div class="app-output-item" style="border-left-color: var(--color-standard)">
+                        <span class="app-out-title" style="color: var(--color-standard)" id="hero-lbl-standard">日常標準</span>
+                        <span class="app-out-phrase">I got it. / Understood.</span>
                     </div>
-                    <div class="app-output-item" style="border-left-color: var(--color-genz); background: var(--color-genz-bg); padding: 14px 16px; border-left-width: 4.5px;">
-                        <span class="app-out-title" style="color: var(--color-genz); font-size: 0.85rem; margin-bottom: 4px;">${t.labels[2]}</span>
-                        <span class="app-out-phrase" style="font-size: 1.15rem;">${item.genz}</span>
+                    <div class="app-output-item" style="border-left-color: var(--color-genz); background: var(--color-genz-bg);">
+                        <span class="app-out-title" style="color: var(--color-genz)" id="hero-lbl-genz">潮流俚語 🔥</span>
+                        <span class="app-out-phrase">Bet. / I feel you.</span>
                     </div>
-                    <div class="app-output-item" style="border-left-color: var(--color-business); padding: 14px 16px; border-left-width: 4.5px;">
-                        <span class="app-out-title" style="color: var(--color-business); font-size: 0.85rem; margin-bottom: 4px;">${t.labels[3]}</span>
-                        <span class="app-out-phrase" style="font-size: 1.15rem;">${item.business}</span>
+                    <div class="app-output-item" style="border-left-color: var(--color-business)">
+                        <span class="app-out-title" style="color: var(--color-business)" id="hero-lbl-business">職場商務</span>
+                        <span class="app-out-phrase">Noted with thanks.</span>
                     </div>
                 </div>
-            `;
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="lang-wall-wrapper">
+    <p class="lang-wall-desc" id="h-desc">支援 30+ 個國家與地區，依不同地區的慣用語與文化語境，提供更自然的翻譯表達。</p>
+    <div class="marquee-container" id="marquee-container">
+        </div>
+</div>
+
+<section class="content-section" id="features" aria-labelledby="about-title">
+    <div class="section-heading">
+        <span class="section-eyebrow" id="about-eyebrow">WHY SLANGUAGE</span>
+        <h2 id="about-title">最道地的外語在地表達與語氣切換</h2>
+        <p id="about-desc">Slanguage 不只翻譯字面意思，更把地區差異、文化語境與說話對象納入考量，讓你在旅行、交友與工作場合都能找到更自然的外語說法。</p>
+    </div>
+    <div class="feature-grid">
+        <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🌍</div>
+            <h3 id="feature-title-1">貼近當地人的表達</h3>
+            <p id="feature-desc-1">依國家與地區調整慣用語、語感與文化差異，減少只看字面翻譯造成的不自然表達。</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🎚️</div>
+            <h3 id="feature-title-2">依情境切換說話語氣</h3>
+            <p id="feature-desc-2">從日常標準、潮流俚語到職場商務，用同一句話快速比較不同場合更合適的說法。</p>
+        </article>
+        <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">💬</div>
+            <h3 id="feature-title-3">補足課本沒有教的用法</h3>
+            <p id="feature-desc-3">協助理解與產生真實對話常見的口語、縮寫與流行表達，不再只會生硬的教科書句型。</p>
+        </article>
+    </div>
+</section>
+
+<section class="comparison-container" id="comparison">
+    <div class="comp-left">
+        <h2 id="comp-title">一鍵切換，掌控說話語氣</h2>
+        <p class="subtitle" id="comp-subtitle">點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：</p>
+        
+        <div class="ex-selector">
+            <button class="ex-btn active" onclick="showEx(0, this)">
+                <div class="btn-content">
+                    <span class="prefix" id="p-1">情境</span>
+                    <span class="core-val" id="cv-1">表達理解、知道了</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </button>
+            <button class="ex-btn" onclick="showEx(1, this)">
+                <div class="btn-content">
+                    <span class="prefix" id="p-2">情境</span>
+                    <span class="core-val" id="cv-2">想離開某個地方</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </button>
+            <button class="ex-btn" onclick="showEx(2, this)">
+                <div class="btn-content">
+                    <span class="prefix" id="p-3">情境</span>
+                    <span class="core-val" id="cv-3">稱讚衣服很好看</span>
+                </div>
+                <span class="arrow-icon">→</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="comp-right">
+        <div class="phone-mockup comp-phone">
+            <div class="dynamic-island"></div>
+            <div class="phone-screen" id="interactive-phone-screen">
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="use-case-section" id="use-cases" aria-labelledby="use-case-title">
+    <div class="section-heading">
+        <span class="section-eyebrow" id="use-case-eyebrow">USE CASES</span>
+        <h2 id="use-case-title">旅行、交友、留學與工作，都能找到更自然的說法</h2>
+        <p id="use-case-intro">當一般翻譯只給你字面答案，Slanguage 進一步協助你依地區、對象與情境選擇更貼近真實對話的外語表達。</p>
+    </div>
+    <div class="use-case-grid">
+        <article class="use-case-card">
+            <span class="use-case-tag" id="use-tag-1">旅遊外語</span>
+            <h3 id="use-title-1">出國旅行時，不再只會課本句型</h3>
+            <p id="use-desc-1">詢問交通、點餐、購物或與當地人聊天時，把原本生硬的翻譯改成更符合當地習慣的自然說法。</p>
+        </article>
+        <article class="use-case-card">
+            <span class="use-case-tag" id="use-tag-2">口說學習</span>
+            <h3 id="use-title-2">補足英文口說與在地用語</h3>
+            <p id="use-desc-2">比較日常、年輕世代與正式語氣，理解同一句話在不同場合的差異，累積真正用得到的表達方式。</p>
+        </article>
+        <article class="use-case-card">
+            <span class="use-case-tag" id="use-tag-3">職場商務</span>
+            <h3 id="use-title-3">讓工作訊息更自然，也更得體</h3>
+            <p id="use-desc-3">撰寫回覆、確認事項或跨國溝通時，快速切換成較正式、清楚且符合職場情境的外語說法。</p>
+        </article>
+        <article class="use-case-card">
+            <span class="use-case-tag" id="use-tag-4">社群聊天</span>
+            <h3 id="use-title-4">看懂俚語、縮寫與流行表達</h3>
+            <p id="use-desc-4">面對社群貼文、朋友訊息或約會聊天，理解字面之外的語氣與文化含義，避免說得太正式或不自然。</p>
+        </article>
+    </div>
+    <div class="steps-grid" aria-label="Slanguage 使用步驟">
+        <article class="step-card"><span class="step-number">STEP 1</span><strong id="step-title-1">輸入想表達的內容</strong><p id="step-desc-1">可輸入單字、句子、縮寫或對話情境。</p></article>
+        <article class="step-card"><span class="step-number">STEP 2</span><strong id="step-title-2">選擇語言與地區</strong><p id="step-desc-2">讓結果更貼近當地慣用語與文化語境。</p></article>
+        <article class="step-card"><span class="step-number">STEP 3</span><strong id="step-title-3">切換最合適的語氣</strong><p id="step-desc-3">比較日常、潮流與商務等表達後再使用。</p></article>
+    </div>
+</section>
+
+<section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="section-heading">
+        <span class="section-eyebrow" id="faq-eyebrow">FAQ</span>
+        <h2 id="faq-title">Slanguage 常見問題</h2>
+        <p id="faq-intro">快速了解 Slanguage 的翻譯方式、語氣切換、支援範圍與上架資訊。</p>
+    </div>
+    <div class="faq-list">
+        <details class="faq-item">
+            <summary id="faq-q-1">Slanguage 和一般翻譯工具有什麼不同？</summary>
+            <div class="faq-answer" id="faq-a-1">一般翻譯工具多半著重字面正確，Slanguage 更重視實際使用情境、地區差異與說話語氣，協助你把生硬句子改成更自然的在地表達。</div>
+        </details>
+        <details class="faq-item">
+            <summary id="faq-q-2">Slanguage 可以切換哪些語氣？</summary>
+            <div class="faq-answer" id="faq-a-2">你可以依情境查看日常標準、潮流俚語、職場商務等不同表達方式，選擇更符合對象與場合的說法。</div>
+        </details>
+        <details class="faq-item">
+            <summary id="faq-q-3">Slanguage 支援哪些語言與地區？</summary>
+            <div class="faq-answer" id="faq-a-3">Slanguage 規劃支援 30+ 個國家與地區，並依不同地區的慣用語、文化與表達方式提供更貼近當地人的翻譯結果。</div>
+        </details>
+        <details class="faq-item">
+            <summary id="faq-q-4">Slanguage 能翻譯俚語、縮寫與流行用語嗎？</summary>
+            <div class="faq-answer" id="faq-a-4">Slanguage 的目標正是協助理解與產生課本較少收錄的口語、俚語與流行表達；實際結果仍會依輸入內容、語境與支援範圍而異。</div>
+        </details>
+        <details class="faq-item">
+            <summary id="faq-q-5">Slanguage 什麼時候可以下載？</summary>
+            <div class="faq-answer" id="faq-a-5">Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。</div>
+        </details>
+    </div>
+</section>
+
+<section class="cta-section" id="download" aria-labelledby="cta-title">
+    <span class="launch-badge" id="launch-badge">App Store・Google Play 上架準備中</span>
+    <h2 id="cta-title">搶先取得 Slanguage</h2>
+    <p id="cta-desc">上架前可免費訂閱通知；上架後，本區按鈕會直接帶你前往正確的 App 商店。</p>
+    
+    <div class="store-btns">
+        <a id="app-store-link" class="store-link is-disabled" href="#waitlistForm" data-store="apple" data-track="app_store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5,12.5c0-2.3,1.9-3.4,2-3.5c-1.1-1.5-2.7-1.8-3.3-1.8c-1.4-0.1-2.8,0.8-3.6,0.8c-0.7,0-1.9-0.8-3.1-0.8c-1.5,0-3,0.9-3.8,2.2c-1.6,2.7-0.4,6.7,1.1,9c0.8,1.1,1.7,2.3,2.9,2.3c1.1,0,1.5-0.7,2.9-0.7c1.4,0,1.8,0.7,2.9,0.7c1.2,0,2-1.1,2.8-2.2c0.9-1.3,1.2-2.5,1.2-2.6C21.5,15.7,17.5,14.2,17.5,12.5z M14.6,6.3c0.6-0.8,1-1.9,0.9-2.9c-0.9,0-2,0.6-2.6,1.4c-0.6,0.7-1,1.8-0.9,2.8C13,7.7,14,7.1,14.6,6.3z"/></svg>
+            <span id="store-apple">敬請期待<b>App Store</b></span>
+        </a>
+        <a id="google-play-link" class="store-link is-disabled" href="#waitlistForm" data-store="google" data-track="google_play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6,20.5l14.2-8L3.6,4.5c-0.3-0.2-0.6-0.1-0.6,0.2v15.5C3,20.6,3.3,20.7,3.6,20.5z M18.4,12l2.6-1.5c0.4-0.2,0.4-0.8,0-1L3.6,1.1C3.3,0.9,3,1.1,3,1.4v0.9l14.2,8L18.4,12z"/></svg>
+            <span id="store-google">敬請期待<b>Google Play</b></span>
+        </a>
+    </div>
+
+    <div class="email-box">
+        <form id="waitlistForm" class="input-group">
+            <input type="email" id="emailField" autocomplete="email" inputmode="email" aria-label="Email" required>
+            <button type="submit" class="submit-btn" id="btn-submit">通知我</button>
+        </form>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        <p class="privacy-note" id="privacy-note">Email 僅用於 Slanguage 上架通知，不會顯示於網站上。</p>
+        <div class="cta-utility">
+            <button type="button" class="share-button" id="share-button" data-track="share">↗ 分享 Slanguage</button>
+        </div>
+    </div>
+</section>
+</main>
+
+<div class="install-bar" id="install-bar" role="region" aria-label="下載 Slanguage">
+    <img class="install-icon" src="logo.png" alt="" width="44" height="44" onerror="this.style.background='#007AFF'">
+    <div class="install-copy">
+        <strong id="install-title">Slanguage | 怎麼說</strong>
+        <span id="install-subtitle">道地外語表達與語氣切換</span>
+    </div>
+    <button type="button" class="install-button" id="install-primary" data-track="sticky_download">上架通知</button>
+</div>
+
+<footer>
+    <p>&copy; 2026 Slanguage. Not just words, but the vibe.</p>
+</footer>
+
+<script>
+    let lang = 'zh';
+
+    /*
+     * App 上架後，只需要把下列兩個網址貼上。
+     * 網站會自動啟用商店按鈕、依裝置推薦商店，並建立 Apple Smart App Banner 與下載結構化資料。
+     */
+    const APP_LINKS = {
+        appStore: '',      // 例：https://apps.apple.com/tw/app/slanguage/id1234567890
+        googlePlay: ''     // 例：https://play.google.com/store/apps/details?id=com.example.slanguage
+    };
+
+    // 33 個國家平分
+    const row1Zh = ["🇹🇼 台灣", "🇺🇸 美國", "🇬🇧 英國", "🇦🇺 澳洲", "🇨🇦 加拿大", "🇨🇳 中國", "🇭🇰 香港", "🇯🇵 日本", "🇰🇷 韓國", "🇻🇳 越南", "🇹🇭 泰國", "🇲🇾 馬來西亞", "🇸🇬 新加坡", "🇪🇸 西班牙", "🇲🇽 墨西哥", "🇦🇪 阿拉伯聯合大公國", "🇲🇦 摩洛哥"];
+    const row2Zh = ["🇵🇹 葡萄牙", "🇧🇷 巴西", "🇮🇳 印度", "🇮🇩 印度尼西亞", "🇷🇺 俄羅斯", "🇵🇭 菲律賓", "🇩🇪 德國", "🇫🇷 法國", "🇹🇷 土耳其", "🇮🇹 義大利", "🇵🇱 波蘭", "🇳🇱 荷蘭", "🇬🇷 希臘", "🇨🇿 捷克", "🇸🇪 瑞典", "🇳🇴 挪威"];
+
+    const row1En = ["🇹🇼 Taiwan", "🇺🇸 USA", "🇬🇧 UK", "🇦🇺 Australia", "🇨🇦 Canada", "🇨🇳 China", "🇭🇰 Hong Kong", "🇯🇵 Japan", "🇰🇷 South Korea", "🇻🇳 Vietnam", "🇹🇭 Thailand", "🇲🇾 Malaysia", "🇸🇬 Singapore", "🇪🇸 Spain", "🇲🇽 Mexico", "🇦🇪 UAE", "🇲🇦 Morocco"];
+    const row2En = ["🇵🇹 Portugal", "🇧🇷 Brazil", "🇮🇳 India", "🇮🇩 Indonesia", "🇷🇺 Russia", "🇵🇭 Philippines", "🇩🇪 Germany", "🇫🇷 France", "🇹🇷 Turkey", "🇮🇹 Italy", "🇵🇱 Poland", "🇳🇱 Netherlands", "🇬🇷 Greece", "🇨🇿 Czechia", "🇸🇪 Sweden", "🇳🇴 Norway"];
+
+    const translations = {
+        zh: {
+            title: `
+                <span class="title-line">不再說 <span class="text-stiff">死板</span> 的語言</span>
+                <span class="title-line">像個 <span class="text-native">母語者</span> 在對話</span>
+            `,
+            kicker: "Slanguage | 怎麼說",
+            subtitle: "解鎖課本學不到的道地口語、潮流俚語與職場溝通，讓你的語言表達更貼近當地人的真實使用情境。",
+            desc: "支援 30+ 個國家與地區，依不同地區的慣用語與文化語境，提供更自然的翻譯表達。",
+            navFeatures: "功能特色",
+            navFaq: "常見問題",
+            navDownload: "下載 App",
+            heroPrimary: "搶先取得 App",
+            heroSecondary: "看看翻譯示範",
+            heroProof: "支援 iOS 與 Android｜上架通知免費訂閱",
+            aboutEyebrow: "WHY SLANGUAGE",
+            aboutTitle: "最道地的外語在地表達與語氣切換",
+            aboutDesc: "Slanguage 不只翻譯字面意思，更把地區差異、文化語境與說話對象納入考量，讓你在旅行、交友與工作場合都能找到更自然的外語說法。",
+            featureTitles: ["貼近當地人的表達", "依情境切換說話語氣", "補足課本沒有教的用法"],
+            featureDescs: [
+                "依國家與地區調整慣用語、語感與文化差異，減少只看字面翻譯造成的不自然表達。",
+                "從日常標準、潮流俚語到職場商務，用同一句話快速比較不同場合更合適的說法。",
+                "協助理解與產生真實對話常見的口語、縮寫與流行表達，不再只會生硬的教科書句型。"
+            ],
+            useCaseEyebrow: "USE CASES",
+            useCaseTitle: "旅行、交友、留學與工作，都能找到更自然的說法",
+            useCaseIntro: "當一般翻譯只給你字面答案，Slanguage 進一步協助你依地區、對象與情境選擇更貼近真實對話的外語表達。",
+            useTags: ["旅遊外語", "口說學習", "職場商務", "社群聊天"],
+            useTitles: ["出國旅行時，不再只會課本句型", "補足英文口說與在地用語", "讓工作訊息更自然，也更得體", "看懂俚語、縮寫與流行表達"],
+            useDescs: [
+                "詢問交通、點餐、購物或與當地人聊天時，把原本生硬的翻譯改成更符合當地習慣的自然說法。",
+                "比較日常、年輕世代與正式語氣，理解同一句話在不同場合的差異，累積真正用得到的表達方式。",
+                "撰寫回覆、確認事項或跨國溝通時，快速切換成較正式、清楚且符合職場情境的外語說法。",
+                "面對社群貼文、朋友訊息或約會聊天，理解字面之外的語氣與文化含義，避免說得太正式或不自然。"
+            ],
+            stepTitles: ["輸入想表達的內容", "選擇語言與地區", "切換最合適的語氣"],
+            stepDescs: ["可輸入單字、句子、縮寫或對話情境。", "讓結果更貼近當地慣用語與文化語境。", "比較日常、潮流與商務等表達後再使用。"],
+            faqEyebrow: "FAQ",
+            faqTitle: "Slanguage 常見問題",
+            faqIntro: "快速了解 Slanguage 的翻譯方式、語氣切換、支援範圍與上架資訊。",
+            faqQuestions: [
+                "Slanguage 和一般翻譯工具有什麼不同？",
+                "Slanguage 可以切換哪些語氣？",
+                "Slanguage 支援哪些語言與地區？",
+                "Slanguage 能翻譯俚語、縮寫與流行用語嗎？",
+                "Slanguage 什麼時候可以下載？"
+            ],
+            faqAnswers: [
+                "一般翻譯工具多半著重字面正確，Slanguage 更重視實際使用情境、地區差異與說話語氣，協助你把生硬句子改成更自然的在地表達。",
+                "你可以依情境查看日常標準、潮流俚語、職場商務等不同表達方式，選擇更符合對象與場合的說法。",
+                "Slanguage 規劃支援 30+ 個國家與地區，並依不同地區的慣用語、文化與表達方式提供更貼近當地人的翻譯結果。",
+                "Slanguage 的目標正是協助理解與產生課本較少收錄的口語、俚語與流行表達；實際結果仍會依輸入內容、語境與支援範圍而異。",
+                "Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。"
+            ],
+            privacyNote: "Email 僅用於 Slanguage 上架通知，不會顯示於網站上。",
+            compTitle: "一鍵切換，掌控說話語氣",
+            compSubtitle: "點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：",
+            launchBadgePending: "App Store・Google Play 上架準備中",
+            launchBadgeLive: "Slanguage 現已開放下載",
+            ctaTitle: "搶先取得 Slanguage",
+            ctaDescPending: "上架前可免費訂閱通知；上架後，本區按鈕會直接帶你前往正確的 App 商店。",
+            ctaDescLive: "選擇你的裝置平台，立即前往 App Store 或 Google Play 下載 Slanguage。",
+            shareLabel: "↗ 分享 Slanguage",
+            shareSuccess: "網站連結已複製。",
+            statusSending: "正在登記上架通知…",
+            statusSuccess: "登記完成！Slanguage 上架時會寄信通知你。",
+            statusExisting: "你已登記過上架通知。",
+            installPending: "上架通知",
+            installDownload: "立即下載",
+            btnSub: "通知我",
+            btnSending: "傳送中...",
+            alertSuccess: "預約成功！正式上架時我們將會第一時間通知您。",
+            alertFail: "傳送失敗，請確認網路連線或稍後再試。",
+            placeholder: "請輸入您的 Email 信箱",
+            storeExpect: "[敬請期待]",
+            labels: ["課本教你的", "日常標準", "潮流俚語 🔥", "職場商務"],
+            prefixes: ["情境", "情境", "情境"],
+            exTitle: ["表達理解、知道了", "想離開某個地方", "稱讚衣服很好看"],
+            row1: row1Zh,
+            row2: row2Zh,
+            data: [
+                { stiff: "I understand.", standard: "I got it. / Understood.", genz: "Bet. / I feel you.", business: "Noted with thanks." },
+                { stiff: "I am leaving now.", standard: "I should get going.", genz: "I'm gonna bounce.", business: "I must take my leave now." },
+                { stiff: "You look nice.", standard: "You look great today!", genz: "Your fit is fire!", business: "You look exceptionally sharp." }
+            ]
+        },
+        en: {
+            title: `
+                <span class="title-line">Stop Speaking</span>
+                <span class="title-line"><span class="text-stiff">Stiff</span> Textbooks</span>
+                <span class="title-line">Talk Like a</span>
+                <span class="title-line"><span class="text-native">True Native</span></span>
+            `,
+            kicker: "Slanguage | How to Say It",
+            subtitle: "Unlock authentic everyday expressions, current slang, and workplace communication that textbooks rarely teach, so your language fits real local contexts.",
+            desc: "Supporting 30+ countries and regions with translations shaped by local usage and cultural context.",
+            navFeatures: "Features",
+            navFaq: "FAQ",
+            navDownload: "Download",
+            heroPrimary: "Get Early Access",
+            heroSecondary: "See the Demo",
+            heroProof: "For iOS and Android | Free launch updates",
+            aboutEyebrow: "WHY SLANGUAGE",
+            aboutTitle: "Authentic Local Expressions with Tone Switching",
+            aboutDesc: "Slanguage goes beyond literal meaning by considering regional usage, cultural context, and who you are speaking to—helping you sound more natural while traveling, socializing, or working.",
+            featureTitles: ["Localized Expressions", "Tone for Every Context", "Beyond Textbook Phrases"],
+            featureDescs: [
+                "Adapt wording, nuance, and cultural usage by country or region instead of relying on literal translation alone.",
+                "Compare standard, Gen Z slang, and business phrasing for the same idea and choose what fits the situation.",
+                "Understand and create real-world conversational language, abbreviations, and current expressions often missing from textbooks."
+            ],
+            useCaseEyebrow: "USE CASES",
+            useCaseTitle: "More Natural Phrasing for Travel, Study, Social Life, and Work",
+            useCaseIntro: "When literal translation is not enough, Slanguage helps you choose expressions that fit the region, audience, and real conversation context.",
+            useTags: ["Travel Language", "Speaking Practice", "Workplace", "Social Chat"],
+            useTitles: ["Travel without sounding like a phrasebook", "Build practical speaking vocabulary", "Write clearer and more natural work messages", "Understand slang, abbreviations, and current expressions"],
+            useDescs: [
+                "Ask for directions, order food, shop, or chat with locals using language that better matches everyday local usage.",
+                "Compare everyday, younger-generation, and formal tones to learn how the same idea changes across situations.",
+                "Switch to clearer, more professional phrasing for replies, confirmations, and cross-border communication.",
+                "Understand the tone and cultural meaning behind social posts, messages, and dating conversations."
+            ],
+            stepTitles: ["Enter what you want to say", "Choose a language and region", "Select the right tone"],
+            stepDescs: ["Enter a word, sentence, abbreviation, or conversation context.", "Shape the result around local usage and cultural context.", "Compare everyday, slang, and business options before using it."],
+            faqEyebrow: "FAQ",
+            faqTitle: "Frequently Asked Questions",
+            faqIntro: "Learn how Slanguage handles translation, tone, regional coverage, and launch updates.",
+            faqQuestions: [
+                "How is Slanguage different from a typical translator?",
+                "Which tones can Slanguage switch between?",
+                "Which languages and regions does Slanguage support?",
+                "Can Slanguage translate slang and abbreviations?",
+                "When will Slanguage be available?"
+            ],
+            faqAnswers: [
+                "Typical translators focus mainly on literal accuracy. Slanguage also considers real usage, regional differences, and speaking tone to turn stiff sentences into more natural local expressions.",
+                "Depending on the context, you can compare standard everyday, Gen Z slang, and business expressions and choose wording that better fits the audience and situation.",
+                "Slanguage is planned to support 30+ countries and regions, with results adapted to regional usage, culture, and communication style.",
+                "Slanguage is designed to help with conversational language, slang, abbreviations, and current expressions that textbooks may not cover. Results can vary by input, context, and supported scope.",
+                "Slanguage is being prepared for release on the App Store and Google Play. Leave your email on this page to receive a launch notification."
+            ],
+            privacyNote: "Your email will only be used for the Slanguage launch notification and will not be displayed on this website.",
+            compTitle: "One Tap to Switch Tones",
+            compSubtitle: "Click the scenarios below to see how Slanguage dynamic UI transforms expressions:",
+            launchBadgePending: "Preparing for App Store and Google Play",
+            launchBadgeLive: "Slanguage is now available",
+            ctaTitle: "Get Slanguage",
+            ctaDescPending: "Join the free launch list now. Once the app is live, these buttons will take you directly to the right app store.",
+            ctaDescLive: "Choose your platform and download Slanguage from the App Store or Google Play.",
+            shareLabel: "↗ Share Slanguage",
+            shareSuccess: "Website link copied.",
+            statusSending: "Joining the launch list…",
+            statusSuccess: "You're on the list! We'll email you when Slanguage launches.",
+            statusExisting: "You have already joined the launch list.",
+            installPending: "Launch Alert",
+            installDownload: "Download",
+            btnSub: "Notify Me",
+            btnSending: "Sending...",
+            alertSuccess: "Success! You are on the list.",
+            alertFail: "Something went wrong. Please try again.",
+            placeholder: "Enter your email address",
+            storeExpect: "[Coming Soon]",
+            labels: ["Your Input", "Standard", "Gen Z Slang 🔥", "Business"],
+            prefixes: ["Topic", "Topic", "Topic"],
+            exTitle: ["Expressing Understanding", "Wanting to Leave", "Complimenting an Outfit"],
+            row1: row1En,
+            row2: row2En,
+            data: [
+                { stiff: "I understand.", standard: "I got it. / Understood.", genz: "Bet. / I feel you.", business: "Noted with thanks." },
+                { stiff: "I am leaving now.", standard: "I should get going.", genz: "I'm gonna bounce.", business: "I must take my leave now." },
+                { stiff: "You look nice.", standard: "You look great today!", genz: "Your fit is fire!", business: "You look exceptionally sharp." }
+            ]
+        }
+    };
+
+    function setLang(nextLang) {
+        lang = nextLang === 'en' ? 'en' : 'zh';
+        updateUI();
+    }
+
+    function toggleLang() {
+        setLang(lang === 'zh' ? 'en' : 'zh');
+    }
+
+    function renderMarquee(r1, r2) {
+        const container = document.getElementById('marquee-container');
+        container.innerHTML = `
+            <div class="marquee-row to-left">
+                <div class="marquee-content">${r1.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
+                <div class="marquee-content" aria-hidden="true">${r1.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
+            </div>
+            <div class="marquee-row to-right">
+                <div class="marquee-content">${r2.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
+                <div class="marquee-content" aria-hidden="true">${r2.map(c => `<span class="lang-tag">${c}</span>`).join('')}</div>
+            </div>
+        `;
+    }
+
+    function updateUI() {
+        const t = translations[lang];
+        
+        document.body.className = `lang-${lang}`;
+        document.documentElement.lang = lang === 'zh' ? 'zh-TW' : 'en';
+        
+        document.getElementById('h-title').innerHTML = t.title;
+        document.getElementById('hero-kicker').innerText = t.kicker;
+        document.getElementById('nav-features').innerText = t.navFeatures;
+        document.getElementById('nav-faq').innerText = t.navFaq;
+        document.getElementById('nav-download').innerText = t.navDownload;
+        document.getElementById('hero-primary-cta').innerText = t.heroPrimary;
+        document.getElementById('hero-secondary-cta').innerText = t.heroSecondary;
+        document.getElementById('hero-proof').innerText = t.heroProof;
+        document.getElementById('about-eyebrow').innerText = t.aboutEyebrow;
+        document.getElementById('about-title').innerText = t.aboutTitle;
+        document.getElementById('about-desc').innerText = t.aboutDesc;
+        document.getElementById('use-case-eyebrow').innerText = t.useCaseEyebrow;
+        document.getElementById('use-case-title').innerText = t.useCaseTitle;
+        document.getElementById('use-case-intro').innerText = t.useCaseIntro;
+        for (let i = 1; i <= 4; i++) {
+            document.getElementById(`use-tag-${i}`).innerText = t.useTags[i - 1];
+            document.getElementById(`use-title-${i}`).innerText = t.useTitles[i - 1];
+            document.getElementById(`use-desc-${i}`).innerText = t.useDescs[i - 1];
+        }
+        for (let i = 1; i <= 3; i++) {
+            document.getElementById(`step-title-${i}`).innerText = t.stepTitles[i - 1];
+            document.getElementById(`step-desc-${i}`).innerText = t.stepDescs[i - 1];
+        }
+        document.getElementById('faq-eyebrow').innerText = t.faqEyebrow;
+        document.getElementById('faq-title').innerText = t.faqTitle;
+        document.getElementById('faq-intro').innerText = t.faqIntro;
+        document.getElementById('privacy-note').innerText = t.privacyNote;
+
+        for (let i = 1; i <= 3; i++) {
+            document.getElementById(`feature-title-${i}`).innerText = t.featureTitles[i - 1];
+            document.getElementById(`feature-desc-${i}`).innerText = t.featureDescs[i - 1];
         }
 
-        setTimeout(() => {
-            const titleEl = document.getElementById('h-title');
-            if(titleEl) titleEl.classList.add('animate-fade-in');
-        }, 100);
+        for (let i = 1; i <= 5; i++) {
+            document.getElementById(`faq-q-${i}`).innerText = t.faqQuestions[i - 1];
+            document.getElementById(`faq-a-${i}`).innerText = t.faqAnswers[i - 1];
+        }
+        document.getElementById('h-desc').innerText = t.desc;
+        document.getElementById('comp-title').innerText = t.compTitle;
+        document.getElementById('comp-subtitle').innerText = t.compSubtitle;
+        document.getElementById('cta-title').innerText = t.ctaTitle;
+        document.getElementById('share-button').innerText = t.shareLabel;
+        document.getElementById('btn-submit').innerText = t.btnSub;
+        updateDownloadExperience();
+        
+        document.getElementById('h-sub-elements').innerText = t.subtitle;
 
-        // Form submission
-        document.getElementById('waitlistForm').onsubmit = function(e) {
-            e.preventDefault();
-            const emailInput = document.getElementById('emailField');
-            const email = emailInput.value.trim();
-            const submitBtn = document.getElementById('btn-submit');
-            const t = translations[lang];
-            
-            if (!email) return;
+        document.getElementById('emailField').placeholder = t.placeholder;
+        // 商店按鈕文字與連結由 updateDownloadExperience() 統一處理。
+        
+        document.getElementById('hero-input-tag').innerText = t.labels[0];
+        document.getElementById('hero-lbl-standard').innerText = t.labels[1];
+        document.getElementById('hero-lbl-genz').innerText = t.labels[2];
+        document.getElementById('hero-lbl-business').innerText = t.labels[3];
+        
+        for (let i = 1; i <= 3; i++) {
+            document.getElementById(`p-${i}`).innerText = t.prefixes[i-1];
+            document.getElementById(`cv-${i}`).innerText = t.exTitle[i-1];
+        }
+        
+        const zhBtn = document.getElementById('btn-zh');
+        const enBtn = document.getElementById('btn-en');
+        zhBtn.classList.toggle('active', lang === 'zh');
+        enBtn.classList.toggle('active', lang === 'en');
+        zhBtn.setAttribute('aria-pressed', String(lang === 'zh'));
+        enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+        
+        renderMarquee(t.row1, t.row2);
+        
+        const activeBtn = document.querySelector('.ex-btn.active');
+        const btns = Array.from(document.querySelectorAll('.ex-btn'));
+        const currentIdx = btns.indexOf(activeBtn);
+        showEx(currentIdx >= 0 ? currentIdx : 0, activeBtn);
+    }
 
-            submitBtn.innerText = t.btnSending;
-            submitBtn.disabled = true;
-            emailInput.disabled = true;
+    function preferredStore() {
+        const ua = navigator.userAgent || '';
+        if (/iPhone|iPad|iPod|Macintosh/i.test(ua)) return 'appStore';
+        if (/Android/i.test(ua)) return 'googlePlay';
+        return APP_LINKS.appStore ? 'appStore' : 'googlePlay';
+    }
 
-            const gasUrl = "https://script.google.com/macros/s/AKfycbxTJ-1DGUuSJaOBJLNA5Ke-cbIkjYqEGUZDYb-ySQ2wKCB4mn2cHQdURwohQjT6oac/exec"; 
+    function validStoreUrl(value) {
+        return /^https:\/\//i.test((value || '').trim());
+    }
 
-            const formData = new URLSearchParams();
-            formData.append("email", email);
+    function configureStoreLink(element, url, fallbackLabel, liveLabel) {
+        const isLive = validStoreUrl(url);
+        element.classList.toggle('is-disabled', !isLive);
+        element.href = isLive ? url : '#waitlistForm';
+        if (isLive) {
+            element.target = '_blank';
+            element.rel = 'noopener noreferrer';
+        } else {
+            element.removeAttribute('target');
+            element.removeAttribute('rel');
+        }
+        const label = element.querySelector('span');
+        const storeName = element.dataset.store === 'apple' ? 'App Store' : 'Google Play';
+        label.innerHTML = `${isLive ? liveLabel : fallbackLabel}<b>${storeName}</b>`;
+    }
 
-            fetch(gasUrl, {
-                method: "POST",
-                mode: "no-cors",
-                headers: {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                },
-                body: formData
-            })
-            .then(() => {
-                alert(t.alertSuccess);
-                this.reset();
-            })
-            .catch(err => {
-                console.error("Submission error:", err);
-                alert(t.alertFail);
-            })
-            .finally(() => {
-                submitBtn.innerText = t.btnSub;
-                submitBtn.disabled = false;
-                emailInput.disabled = false;
-            });
+    function updateDownloadSchema() {
+        const urls = [APP_LINKS.appStore, APP_LINKS.googlePlay].filter(validStoreUrl);
+        document.getElementById('dynamic-app-schema')?.remove();
+        if (!urls.length) return;
+        const script = document.createElement('script');
+        script.id = 'dynamic-app-schema';
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'SoftwareApplication',
+            name: 'Slanguage | 怎麼說',
+            applicationCategory: 'UtilitiesApplication',
+            operatingSystem: 'iOS, Android',
+            downloadUrl: urls
+        });
+        document.head.appendChild(script);
+    }
+
+    function updateSmartAppBanner() {
+        document.querySelector('meta[name="apple-itunes-app"]')?.remove();
+        const match = (APP_LINKS.appStore || '').match(/id(\d+)/);
+        if (!match) return;
+        const meta = document.createElement('meta');
+        meta.name = 'apple-itunes-app';
+        meta.content = `app-id=${match[1]}`;
+        document.head.appendChild(meta);
+    }
+
+    function updateDownloadExperience() {
+        const t = translations[lang];
+        const appleLive = validStoreUrl(APP_LINKS.appStore);
+        const googleLive = validStoreUrl(APP_LINKS.googlePlay);
+        const anyLive = appleLive || googleLive;
+        configureStoreLink(document.getElementById('app-store-link'), APP_LINKS.appStore, t.storeExpect, lang === 'zh' ? '立即下載' : 'Download on the');
+        configureStoreLink(document.getElementById('google-play-link'), APP_LINKS.googlePlay, t.storeExpect, lang === 'zh' ? '立即下載' : 'Get it on');
+
+        document.getElementById('launch-badge').innerText = anyLive ? t.launchBadgeLive : t.launchBadgePending;
+        document.getElementById('cta-desc').innerText = anyLive ? t.ctaDescLive : t.ctaDescPending;
+        const preferred = preferredStore();
+        const preferredUrl = validStoreUrl(APP_LINKS[preferred]) ? APP_LINKS[preferred] : (appleLive ? APP_LINKS.appStore : (googleLive ? APP_LINKS.googlePlay : ''));
+        const heroCta = document.getElementById('hero-primary-cta');
+        heroCta.href = preferredUrl || '#download';
+        heroCta.innerText = preferredUrl ? t.installDownload : t.heroPrimary;
+        if (preferredUrl) {
+            heroCta.target = '_blank'; heroCta.rel = 'noopener noreferrer';
+        } else {
+            heroCta.removeAttribute('target'); heroCta.removeAttribute('rel');
+        }
+        document.getElementById('install-primary').innerText = preferredUrl ? t.installDownload : t.installPending;
+        document.getElementById('install-subtitle').innerText = anyLive
+            ? (lang === 'zh' ? '選擇商店，立即下載' : 'Choose a store and download')
+            : (lang === 'zh' ? '道地外語表達與語氣切換' : 'Local expressions and tone switching');
+        updateDownloadSchema();
+        updateSmartAppBanner();
+    }
+
+    function trackEvent(action, label = '') {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'slanguage_cta', action, label });
+        window.dispatchEvent(new CustomEvent('slanguage:cta', { detail: { action, label } }));
+    }
+
+    function showEx(idx, btn) {
+        document.querySelectorAll('.ex-btn').forEach(b => b.classList.remove('active'));
+        if(btn) btn.classList.add('active');
+
+        const t = translations[lang];
+        const item = t.data[idx];
+        
+        const phoneScreen = document.getElementById('interactive-phone-screen');
+        phoneScreen.innerHTML = `
+            <div class="app-header">
+                <span class="app-logo-text">Slanguage</span>
+                <span class="app-lang-badge">⇄ English</span>
+            </div>
+            <div class="app-input-card" style="padding: 10px 14px; margin-bottom: 12px;">
+                <span class="app-card-tag" style="font-size: 0.75rem; margin-bottom: 4px;">${t.labels[0]}</span>
+                <div class="app-card-text" style="font-size: 1.1rem;">${item.stiff}</div>
+            </div>
+            <div class="app-output-container">
+                <div class="app-output-item" style="border-left-color: var(--color-standard); padding: 14px 16px; border-left-width: 4.5px;">
+                    <span class="app-out-title" style="color: var(--color-standard); font-size: 0.85rem; margin-bottom: 4px;">${t.labels[1]}</span>
+                    <span class="app-out-phrase" style="font-size: 1.15rem;">${item.standard}</span>
+                </div>
+                <div class="app-output-item" style="border-left-color: var(--color-genz); background: var(--color-genz-bg); padding: 14px 16px; border-left-width: 4.5px;">
+                    <span class="app-out-title" style="color: var(--color-genz); font-size: 0.85rem; margin-bottom: 4px;">${t.labels[2]}</span>
+                    <span class="app-out-phrase" style="font-size: 1.15rem;">${item.genz}</span>
+                </div>
+                <div class="app-output-item" style="border-left-color: var(--color-business); padding: 14px 16px; border-left-width: 4.5px;">
+                    <span class="app-out-title" style="color: var(--color-business); font-size: 0.85rem; margin-bottom: 4px;">${t.labels[3]}</span>
+                    <span class="app-out-phrase" style="font-size: 1.15rem;">${item.business}</span>
+                </div>
+            </div>
+        `;
+    }
+
+    setTimeout(() => {
+        const titleEl = document.getElementById('h-title');
+        if(titleEl) titleEl.classList.add('animate-fade-in');
+    }, 100);
+
+    // Form submission
+    document.getElementById('waitlistForm').onsubmit = function(e) {
+        e.preventDefault();
+        const emailInput = document.getElementById('emailField');
+        const email = emailInput.value.trim();
+        const submitBtn = document.getElementById('btn-submit');
+        const t = translations[lang];
+        
+        if (!email) return;
+
+        submitBtn.innerText = t.btnSending;
+        submitBtn.disabled = true;
+        emailInput.disabled = true;
+        const status = document.getElementById('form-status');
+        status.className = 'form-status';
+        status.innerText = t.statusSending;
+
+        const gasUrl = "https://script.google.com/macros/s/AKfycbxTJ-1DGUuSJaOBJLNA5Ke-cbIkjYqEGUZDYb-ySQ2wKCB4mn2cHQdURwohQjT6oac/exec"; 
+
+        const formData = new URLSearchParams();
+        formData.append("email", email);
+
+        fetch(gasUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: formData
+        })
+        .then(() => {
+            this.reset();
+            localStorage.setItem('slanguage_waitlist_joined', '1');
+            status.className = 'form-status success';
+            status.innerText = t.statusSuccess;
+            trackEvent('waitlist_success');
+        })
+        .catch(err => {
+            console.error("Submission error:", err);
+            status.className = 'form-status error';
+            status.innerText = t.alertFail;
+            trackEvent('waitlist_error');
+        })
+        .finally(() => {
+            submitBtn.innerText = t.btnSub;
+            submitBtn.disabled = false;
+            emailInput.disabled = false;
+        });
+    };
+
+    document.querySelectorAll('[data-track]').forEach(element => {
+        element.addEventListener('click', () => trackEvent(element.dataset.track || 'click', element.getAttribute('href') || ''));
+    });
+
+    document.getElementById('install-primary').addEventListener('click', () => {
+        const key = preferredStore();
+        const preferredUrl = validStoreUrl(APP_LINKS[key]) ? APP_LINKS[key] : (validStoreUrl(APP_LINKS.appStore) ? APP_LINKS.appStore : APP_LINKS.googlePlay);
+        if (validStoreUrl(preferredUrl)) {
+            window.open(preferredUrl, '_blank', 'noopener,noreferrer');
+        } else {
+            document.getElementById('download').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => document.getElementById('emailField').focus(), 450);
+        }
+    });
+
+    document.getElementById('share-button').addEventListener('click', async () => {
+        const t = translations[lang];
+        const shareData = {
+            title: 'Slanguage | 怎麼說',
+            text: lang === 'zh' ? '最道地的外語在地表達與語氣切換' : 'Authentic local expressions with tone switching',
+            url: location.href
         };
+        try {
+            if (navigator.share) await navigator.share(shareData);
+            else {
+                await navigator.clipboard.writeText(location.href);
+                const status = document.getElementById('form-status');
+                status.className = 'form-status success';
+                status.innerText = t.shareSuccess;
+            }
+            trackEvent('share_success');
+        } catch (error) {
+            if (error?.name !== 'AbortError') console.warn('Share failed:', error);
+        }
+    });
 
-        updateUI();
-    </script>
+    const downloadSection = document.getElementById('download');
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+            document.getElementById('install-bar').classList.toggle('hidden', entries[0].isIntersecting);
+        }, { threshold: 0.18 });
+        observer.observe(downloadSection);
+    }
+
+    updateUI();
+    if (localStorage.getItem('slanguage_waitlist_joined') === '1') {
+        const status = document.getElementById('form-status');
+        status.className = 'form-status success';
+        status.innerText = translations[lang].statusExisting;
+    }
+</script>
+
 </body>
 </html>
