@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swipeuplabs.github.io/slanguage-web/sitemap.xml

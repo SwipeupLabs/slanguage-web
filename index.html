@@ -14,8 +14,8 @@
     <meta name="application-name" content="Slanguage | 怎麼說">
     <meta name="theme-color" content="#007AFF">
     <meta name="format-detection" content="telephone=no">
-    <link rel="canonical" href="./">
-    <!-- 完成 Google Search Console 驗證後，可將驗證 meta 標籤貼在這裡。 -->
+    <link rel="canonical" href="https://swipeuplabs.github.io/slanguage-web/">
+    <!-- Google Search Console 使用 HTML 檔案驗證：google5af7e96a235a4b26.html（檔案需放在網站根目錄） -->
     <!-- App 上架後，JavaScript 會依 App Store 網址自動建立 Apple Smart App Banner。 -->
 
     <!-- Open Graph / 社群分享 -->
@@ -24,10 +24,15 @@
     <meta property="og:site_name" content="Slanguage | 怎麼說">
     <meta property="og:title" content="Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換">
     <meta property="og:description" content="把課本式翻譯變成更自然的在地表達，並依日常、潮流俚語與職場商務等情境切換語氣。">
-    <!-- 製作 1200×630 分享圖後，可加入 og:image 與 twitter:image 的絕對網址。 -->
-    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://swipeuplabs.github.io/slanguage-web/">
+    <meta property="og:image" content="https://swipeuplabs.github.io/slanguage-web/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Slanguage｜怎麼說 — 最道地的外語在地表達與語氣切換">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換">
     <meta name="twitter:description" content="支援 30+ 國家與地區，讓外語表達更自然、更貼近當地使用情境。">
+    <meta name="twitter:image" content="https://swipeuplabs.github.io/slanguage-web/og-image.png">
 
     <link rel="icon" href="logo.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,32 +46,35 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "#organization",
+          "@id": "https://swipeuplabs.github.io/slanguage-web/#organization",
           "name": "SwipeUp Labs",
           "brand": {
             "@type": "Brand",
             "name": "Slanguage | 怎麼說"
           },
-          "logo": "logo.png"
+          "logo": "https://swipeuplabs.github.io/slanguage-web/logo.png",
+          "url": "https://swipeuplabs.github.io/slanguage-web/"
         },
         {
           "@type": "WebSite",
-          "@id": "#website",
+          "@id": "https://swipeuplabs.github.io/slanguage-web/#website",
           "name": "Slanguage | 怎麼說",
           "alternateName": ["Slanguage", "怎麼說"],
+          "url": "https://swipeuplabs.github.io/slanguage-web/",
           "inLanguage": ["zh-TW", "en"],
-          "publisher": { "@id": "#organization" }
+          "publisher": { "@id": "https://swipeuplabs.github.io/slanguage-web/#organization" }
         },
         {
           "@type": "SoftwareApplication",
-          "@id": "#slanguage-app",
+          "@id": "https://swipeuplabs.github.io/slanguage-web/#slanguage-app",
           "name": "Slanguage | 怎麼說",
           "alternateName": "Slanguage",
           "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "iOS, Android",
           "inLanguage": ["zh-TW", "en"],
           "description": "將生硬的課本翻譯轉換成更自然的外語在地表達，並依日常、潮流俚語與職場商務等情境切換語氣，支援 30+ 國家與地區。",
-          "publisher": { "@id": "#organization" }
+          "url": "https://swipeuplabs.github.io/slanguage-web/",
+          "publisher": { "@id": "https://swipeuplabs.github.io/slanguage-web/#organization" }
         },
         {
           "@type": "FAQPage",
