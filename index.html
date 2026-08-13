@@ -199,7 +199,7 @@
     }
 
     /* --- Navigation --- */
-    nav {
+    .site-nav {
         position: fixed;
         top: 0; width: 100%; padding: 14px 5%;
         z-index: 1000; background: var(--bg-blur); backdrop-filter: blur(20px);
@@ -654,6 +654,8 @@
 
     footer { text-align: center; padding: 50px 50px 110px; color: var(--text-gray); font-size: 0.9rem; }
     .footer-legal {
+        position: static; top: auto; width: auto; padding: 0; z-index: auto;
+        background: transparent; backdrop-filter: none; border: 0;
         display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 14px;
     }
     .footer-legal a { color: var(--text-gray); text-decoration: none; font-weight: 700; }
@@ -678,6 +680,13 @@
         .steps-grid { grid-template-columns: 1fr; }
     }
     
+    @media (max-width: 980px) and (min-width: 769px) {
+        .nav-actions { gap: 8px; }
+        #nav-features, #nav-download { display: none; }
+        .nav-link { padding: 7px 8px; font-size: 0.84rem; }
+        .lang-btn { padding: 6px 11px; }
+    }
+
     @media (max-width: 768px) {
         .title-line { font-size: clamp(2.3rem, 7.5vw, 3.5rem); font-weight: 900; } 
         .hero .text-stiff, .hero .text-native { font-size: clamp(2.8rem, 11vw, 4.6rem); } 
@@ -715,7 +724,7 @@
     <div class="blob blob-3"></div>
 </div>
 
-<nav aria-label="主要導覽">
+<nav class="site-nav" aria-label="主要導覽">
     <div class="nav-inner">
         <a href="#top" class="logo" aria-label="Slanguage 首頁">
             <img src="logo.png" alt="Slanguage App 圖示" width="40" height="40" onerror="this.style.background='#007AFF'"> 
@@ -723,6 +732,7 @@
         </a>
         <div class="nav-actions">
             <a href="#features" class="nav-link" id="nav-features">功能特色</a>
+            <a href="#comparison" class="nav-link" id="nav-demo">查看翻譯示範</a>
             <a href="#faq" class="nav-link" id="nav-faq">常見問題</a>
             <a href="#download" class="nav-link" id="nav-download">下載 App</a>
             <div class="lang-switch" role="group" aria-label="切換網站語言">
@@ -990,6 +1000,7 @@
             subtitle: "解鎖課本學不到的道地口語、潮流俚語與職場溝通，讓你的語言表達更貼近當地人的真實使用情境。",
             desc: "支援 30+ 個國家與地區，依不同地區的慣用語與文化語境，提供更自然的翻譯表達。",
             navFeatures: "功能特色",
+            navDemo: "查看翻譯示範",
             navFaq: "常見問題",
             navDownload: "下載 App",
             heroPrimary: "搶先取得 App",
@@ -1080,6 +1091,7 @@
             subtitle: "Unlock authentic everyday expressions, current slang, and workplace communication that textbooks rarely teach, so your language fits real local contexts.",
             desc: "Supporting 30+ countries and regions with translations shaped by local usage and cultural context.",
             navFeatures: "Features",
+            navDemo: "Translation Demo",
             navFaq: "FAQ",
             navDownload: "Download",
             heroPrimary: "Get Early Access",
@@ -1193,6 +1205,7 @@
         document.getElementById('h-title').innerHTML = t.title;
         document.getElementById('hero-kicker').innerText = t.kicker;
         document.getElementById('nav-features').innerText = t.navFeatures;
+        document.getElementById('nav-demo').innerText = t.navDemo;
         document.getElementById('nav-faq').innerText = t.navFaq;
         document.getElementById('nav-download').innerText = t.navDownload;
         document.getElementById('hero-primary-cta').innerText = t.heroPrimary;
