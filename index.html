@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- 核心 SEO：首頁名稱固定使用完整品牌關鍵字 -->
-    <title>Slanguage | 像母語者一樣說話 - 最道地的外語在地表達與語氣切換</title>
-    <meta name="description" content="Slanguage，將生硬的課本翻譯轉換成更自然的外語在地表達，並依日常、潮流俚語與職場商務等情境切換語氣，支援 30+ 國家與地區。">
+    <title>Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換</title>
+    <meta name="description" content="Slanguage｜怎麼說，將生硬的課本翻譯轉換成更自然的外語在地表達，並依日常、潮流俚語與職場商務等情境切換語氣，支援 30+ 國家與地區。">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
     <meta name="author" content="SwipeUp Labs">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="zh_TW">
     <meta property="og:site_name" content="Slanguage | 怎麼說">
-    <meta property="og:title" content="Slanguage | 像母語者一樣說話 - 最道地的外語在地表達與語氣切換">
+    <meta property="og:title" content="Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換">
     <meta property="og:description" content="把課本式翻譯變成更自然的在地表達，並依日常、潮流俚語與職場商務等情境切換語氣。">
     <meta property="og:url" content="https://swipeuplabs.github.io/slanguage-web/">
     <meta property="og:image" content="https://swipeuplabs.github.io/slanguage-web/og-image.png">
@@ -30,7 +30,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Slanguage｜怎麼說 — 最道地的外語在地表達與語氣切換">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Slanguage | 像母語者一樣說話 - 最道地的外語在地表達與語氣切換">
+    <meta name="twitter:title" content="Slanguage | 怎麼說 - 最道地的外語在地表達與語氣切換">
     <meta name="twitter:description" content="支援 30+ 國家與地區，讓外語表達更自然、更貼近當地使用情境。">
     <meta name="twitter:image" content="https://swipeuplabs.github.io/slanguage-web/og-image.png">
 
@@ -653,6 +653,12 @@
     .install-button { min-height: 42px; padding: 0 16px; border-radius: 14px; border: 0; color: #fff; background: linear-gradient(135deg,#007AFF,#AF52DE); font-weight: 850; cursor: pointer; white-space: nowrap; }
 
     footer { text-align: center; padding: 50px 50px 110px; color: var(--text-gray); font-size: 0.9rem; }
+    .footer-legal {
+        display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 14px;
+    }
+    .footer-legal a { color: var(--text-gray); text-decoration: none; font-weight: 700; }
+    .footer-legal a:hover { color: var(--primary); }
+    footer p { margin: 0; }
 
     /* --- Responsive Media Queries --- */
     @media (max-width: 992px) {
@@ -948,6 +954,10 @@
 </div>
 
 <footer>
+    <nav class="footer-legal" id="footer-legal" aria-label="法律連結">
+        <a id="footer-privacy" href="privacy/?lang=zh-TW">隱私權政策</a>
+        <a id="footer-terms" href="terms/?lang=zh-TW">服務條款</a>
+    </nav>
     <p>&copy; 2026 Slanguage. Not just words, but the vibe.</p>
 </footer>
 
@@ -1025,6 +1035,9 @@
                 "Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。"
             ],
             privacyNote: "Email 僅用於 Slanguage 上架通知，不會顯示於網站上。",
+            footerPrivacy: "隱私權政策",
+            footerTerms: "服務條款",
+            footerLegalAria: "法律連結",
             compTitle: "一鍵切換，掌控說話語氣",
             compSubtitle: "點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：",
             launchBadgePending: "App Store・Google Play 上架準備中",
@@ -1112,6 +1125,9 @@
                 "Slanguage is being prepared for release on the App Store and Google Play. Leave your email on this page to receive a launch notification."
             ],
             privacyNote: "Your email will only be used for the Slanguage launch notification and will not be displayed on this website.",
+            footerPrivacy: "Privacy Policy",
+            footerTerms: "Terms of Service",
+            footerLegalAria: "Legal links",
             compTitle: "One Tap to Switch Tones",
             compSubtitle: "Click the scenarios below to see how Slanguage dynamic UI transforms expressions:",
             launchBadgePending: "Preparing for App Store and Google Play",
@@ -1201,6 +1217,14 @@
         document.getElementById('faq-title').innerText = t.faqTitle;
         document.getElementById('faq-intro').innerText = t.faqIntro;
         document.getElementById('privacy-note').innerText = t.privacyNote;
+        const legalLang = lang === 'zh' ? 'zh-TW' : 'en';
+        const footerPrivacy = document.getElementById('footer-privacy');
+        const footerTerms = document.getElementById('footer-terms');
+        footerPrivacy.innerText = t.footerPrivacy;
+        footerTerms.innerText = t.footerTerms;
+        footerPrivacy.href = `privacy/?lang=${encodeURIComponent(legalLang)}`;
+        footerTerms.href = `terms/?lang=${encodeURIComponent(legalLang)}`;
+        document.getElementById('footer-legal').setAttribute('aria-label', t.footerLegalAria);
 
         for (let i = 1; i <= 3; i++) {
             document.getElementById(`feature-title-${i}`).innerText = t.featureTitles[i - 1];
