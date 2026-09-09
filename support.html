@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slanguage Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #007AFF;
+            --primary-light: #E5F1FF;
+            --accent-purple: #AF52DE;
+            --accent-orange: #FF9500;
+            --accent-green: #34C759;
+            --text-main: #1D1D1F;
+            --text-gray: #86868B;
+            --bg-blur: rgba(255, 255, 255, 0.7);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+            background-color: #ffffff;
+            color: var(--text-main);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- Animated blurred background blobs --- */
+        .bg-wrapper {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -2;
+            background: #fdfdfd;
+        }
+
+        .blob {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            filter: blur(100px);
+            opacity: 0.25;
+            z-index: -1;
+            animation: move 25s infinite alternate;
+        }
+        .blob-1 { background: var(--primary); top: -200px; right: -100px; }
+        .blob-2 { background: var(--accent-purple); bottom: -200px; left: -100px; animation-delay: -5s; }
+        .blob-3 { background: var(--accent-orange); top: 30%; left: 10%; animation-delay: -10s; }
+
+        @keyframes move {
+            from { transform: translate(0, 0) scale(1); }
+            to   { transform: translate(100px, 100px) scale(1.1); }
+        }
+
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            top: 0; width: 100%; padding: 20px 5%;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; background: var(--bg-blur); backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            display: flex; align-items: center; gap: 12px;
+            font-weight: 800; font-size: 1.5rem;
+            color: var(--primary); text-decoration: none;
+        }
+        .logo img {
+            width: 40px; height: 40px;
+            border-radius: 10px; background: var(--primary);
+        }
+
+        .nav-link {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .nav-link:hover { color: var(--primary); }
+
+        /* --- Page wrapper --- */
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 160px 5% 100px;
+        }
+
+        /* --- Hero / Intro --- */
+        .support-hero {
+            text-align: center;
+            margin-bottom: 72px;
+        }
+        .support-hero h1 {
+            font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #007AFF 0%, #AF52DE 60%, #FF2D55 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+        .support-hero p {
+            font-size: clamp(1rem, 1.15vw, 1.15rem);
+            line-height: 1.6;
+            color: var(--text-gray);
+            max-width: 640px;
+            margin: 0 auto;
+            font-weight: 500;
+        }
+
+        /* --- Section cards --- */
+        .support-section {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 28px;
+            padding: 36px 40px;
+            margin-bottom: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.03);
+        }
+
+        .support-section .section-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+        .icon-using     { background: var(--color-stiff-bg, #f2f2f7); color: #8e8e93; }
+        .icon-billing   { background: var(--primary-light);        color: var(--primary); }
+        .icon-issues    { background: #FFF5E6;                      color: var(--accent-orange); }
+        .icon-contact   { background: #EAF9EE;                      color: var(--accent-green); }
+        .icon-privacy   { background: #F5EBFF;                      color: var(--accent-purple); }
+        .icon-terms     { background: var(--primary-light);        color: var(--primary); }
+
+        .support-section h2 {
+            font-size: 1.45rem;
+            font-weight: 800;
+            letter-spacing: -0.25px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+        .support-section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-main);
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .support-section p:last-child { margin-bottom: 0; }
+
+        .support-section a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 1.5px solid rgba(0,122,255,0.25);
+            transition: border-color 0.2s;
+        }
+        .support-section a:hover {
+            border-color: var(--primary);
+        }
+
+        .email-link {
+            display: inline-block;
+            margin-top: 4px;
+            word-break: break-all;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 5% 60px;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 768px) {
+            .page { padding: 140px 5% 80px; }
+            .support-section { padding: 28px 24px; border-radius: 22px; }
+            .support-section h2 { font-size: 1.25rem; }
+            .support-hero { margin-bottom: 56px; }
+        }
+
+        @media (max-width: 480px) {
+            nav { padding: 16px 5%; }
+            .logo { font-size: 1.25rem; gap: 8px; }
+            .logo img { width: 34px; height: 34px; border-radius: 8px; }
+            .nav-link { font-size: 0.85rem; }
+            .support-section { padding: 24px 20px; border-radius: 20px; margin-bottom: 18px; }
+            .support-section .section-icon { width: 44px; height: 44px; border-radius: 12px; font-size: 1.25rem; margin-bottom: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-wrapper" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Slanguage logo" onerror="this.style.background='#007AFF'; this.removeAttribute('src');">
+            Slanguage
+        </a>
+        <a href="index.html" class="nav-link">Back to Home</a>
+    </nav>
+
+    <main class="page">
+
+        <section class="support-hero">
+            <h1>Slanguage Support</h1>
+            <p>Need help with Slanguage? Find answers to common questions or contact us for support.</p>
+        </section>
+
+        <section class="support-section" id="using">
+            <div class="section-icon icon-using" aria-hidden="true">💬</div>
+            <h2>Using Slanguage</h2>
+            <p>Slanguage helps you turn stiff, textbook-style expressions into natural, native-sounding speech. To get started, simply enter the text you want to translate, choose your target language, pick a tone (such as Standard, Gen Z, Social, Business, or Romantic), and tap translate.</p>
+            <p>Slanguage will return a translated result tailored to the tone you selected, along with helpful context and usage notes where available.</p>
+        </section>
+
+        <section class="support-section" id="billing">
+            <div class="section-icon icon-billing" aria-hidden="true">💳</div>
+            <h2>Subscription &amp; Billing</h2>
+            <p>Subscriptions purchased on iOS are managed directly through your Apple App Store account and are billed by Apple, not by SwipeUp Labs.</p>
+            <p>To view, change, or cancel your Slanguage subscription on iOS, open the <strong>App Store</strong> app on your device, tap your profile picture, then tap <strong>Subscriptions</strong> and follow the on-screen instructions.</p>
+            <p>SwipeUp Labs is unable to directly cancel Apple App Store subscriptions on your behalf, as subscription management is handled exclusively by Apple for purchases made through the App Store.</p>
+        </section>
+
+        <section class="support-section" id="issues">
+            <div class="section-icon icon-issues" aria-hidden="true">⚠️</div>
+            <h2>Translation Issues</h2>
+            <p>If you receive an inaccurate, unexpected, or unhelpful translation, you can report it directly through the in-app reporting feature. Tap the report button that appears on the translation result screen and briefly describe the issue. Your feedback helps us improve Slanguage translations for everyone.</p>
+        </section>
+
+        <section class="support-section" id="contact">
+            <div class="section-icon icon-contact" aria-hidden="true">✉️</div>
+            <h2>Contact Support</h2>
+            <p>If your question isn&rsquo;t answered above or you need additional help, you can reach the Slanguage support team at the following email address:</p>
+            <p><a class="email-link" href="mailto:swipeuplabs.huayixia@gmail.com">swipeuplabs.huayixia@gmail.com</a></p>
+        </section>
+
+        <section class="support-section" id="privacy">
+            <div class="section-icon icon-privacy" aria-hidden="true">🔒</div>
+            <h2>Privacy Policy</h2>
+            <p>To understand how Slanguage collects, uses, and shares your information, read our full Privacy Policy:</p>
+            <p><a href="https://SwipeupLabs.github.io/slanguage-legal/privacy-en.html" target="_blank" rel="noopener noreferrer">Slanguage Privacy Policy (English)</a></p>
+        </section>
+
+        <section class="support-section" id="terms">
+            <div class="section-icon icon-terms" aria-hidden="true">📄</div>
+            <h2>Terms of Service</h2>
+            <p>To review the terms and conditions that apply to your use of Slanguage, visit our Terms of Service:</p>
+            <p><a href="https://SwipeupLabs.github.io/slanguage-legal/terms-en.html" target="_blank" rel="noopener noreferrer">Slanguage Terms of Service (English)</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Slanguage. Not just words, but the vibe.</p>
+    </footer>
+
+</body>
+</html>
