@@ -653,14 +653,25 @@
     .install-button { min-height: 42px; padding: 0 16px; border-radius: 14px; border: 0; color: #fff; background: linear-gradient(135deg,#007AFF,#AF52DE); font-weight: 850; cursor: pointer; white-space: nowrap; }
 
     footer { text-align: center; padding: 50px 50px 110px; color: var(--text-gray); font-size: 0.9rem; }
-    .footer-legal {
-        position: static; top: auto; width: auto; padding: 0; z-index: auto;
-        background: transparent; backdrop-filter: none; border: 0;
-        display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 14px;
-    }
-    .footer-legal a { color: var(--text-gray); text-decoration: none; font-weight: 700; }
-    .footer-legal a:hover { color: var(--primary); }
-    footer p { margin: 0; }
+.footer-legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+.footer-legal a {
+    color: #6e6e73;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #007aff;
+}
 
     /* --- Responsive Media Queries --- */
     @media (max-width: 992px) {
