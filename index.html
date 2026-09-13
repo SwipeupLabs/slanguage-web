@@ -975,10 +975,25 @@
 </div>
 
 <footer>
-    <nav class="footer-legal" aria-label="網站政策與支援">
-        <a href="/slanguage-web/privacy/?lang=zh-TW">隱私權政策</a>
-        <a href="/slanguage-web/terms/?lang=zh-TW">服務條款</a>
-        <a href="/slanguage-web/support.html">支援</a>
+    <nav class="footer-legal"
+         id="footer-legal"
+         aria-label="網站政策與支援">
+
+        <a id="footer-privacy"
+           href="/slanguage-web/privacy/?lang=zh-TW">
+            隱私權政策
+        </a>
+
+        <a id="footer-terms"
+           href="/slanguage-web/terms/?lang=zh-TW">
+            服務條款
+        </a>
+
+        <a id="footer-support"
+           href="/slanguage-web/support.html">
+            支援
+        </a>
+
     </nav>
 
     <p>&copy; 2026 Slanguage. Not just words, but the vibe.</p>
@@ -1061,7 +1076,8 @@
             privacyNote: "Email 僅用於 Slanguage 上架通知，不會顯示於網站上。",
             footerPrivacy: "隱私權政策",
             footerTerms: "服務條款",
-            footerLegalAria: "法律連結",
+            footerSupport: "支援",
+            footerLegalAria: "網站政策與支援連結",
             compTitle: "一鍵切換，掌控說話語氣",
             compSubtitle: "點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：",
             launchBadgePending: "App Store・Google Play 上架準備中",
@@ -1152,7 +1168,8 @@
             privacyNote: "Your email will only be used for the Slanguage launch notification and will not be displayed on this website.",
             footerPrivacy: "Privacy Policy",
             footerTerms: "Terms of Service",
-            footerLegalAria: "Legal links",
+            footerSupport: "Support",
+            footerLegalAria: "Legal and support links",
             compTitle: "One Tap to Switch Tones",
             compSubtitle: "Click the scenarios below to see how Slanguage dynamic UI transforms expressions:",
             launchBadgePending: "Preparing for App Store and Google Play",
@@ -1244,13 +1261,26 @@
         document.getElementById('faq-intro').innerText = t.faqIntro;
         document.getElementById('privacy-note').innerText = t.privacyNote;
         const legalLang = lang === 'zh' ? 'zh-TW' : 'en';
+
         const footerPrivacy = document.getElementById('footer-privacy');
         const footerTerms = document.getElementById('footer-terms');
+        const footerSupport = document.getElementById('footer-support');
+
         footerPrivacy.innerText = t.footerPrivacy;
         footerTerms.innerText = t.footerTerms;
-        footerPrivacy.href = `privacy/?lang=${encodeURIComponent(legalLang)}`;
-        footerTerms.href = `terms/?lang=${encodeURIComponent(legalLang)}`;
-        document.getElementById('footer-legal').setAttribute('aria-label', t.footerLegalAria);
+        footerSupport.innerText = t.footerSupport;
+
+        footerPrivacy.href =
+            `/slanguage-web/privacy/?lang=${encodeURIComponent(legalLang)}`;
+
+        footerTerms.href =
+    `/slanguage-web/terms/?lang=${encodeURIComponent(legalLang)}`;
+
+        footerSupport.href =
+            '/slanguage-web/support.html';
+
+        document.getElementById('footer-legal')
+            .setAttribute('aria-label', t.footerLegalAria);
 
         for (let i = 1; i <= 3; i++) {
             document.getElementById(`feature-title-${i}`).innerText = t.featureTitles[i - 1];
