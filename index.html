@@ -963,7 +963,7 @@
 
     <div class="download-actions">
         <div class="cta-utility">
-            <button type="button" class="share-button" id="share-button" data-track="share">↗ 分享 Slanguage</button>
+            <button type="button" class="share-button" id="share-button" data-track="share">分享 Slanguage</button>
         </div>
         <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
     </div>
@@ -1089,7 +1089,7 @@ const APP_LINKS = {
             ctaTitle: "立刻下載 Slanguage",
             ctaDescPending: "Slanguage 已在 App Store 與 Google Play 上架，選擇你的裝置平台，立刻下載。",
             ctaDescLive: "Slanguage 已在 App Store 與 Google Play 上架，選擇你的裝置平台，立刻下載。",
-            shareLabel: "↗ 分享 Slanguage",
+            shareLabel: "分享 Slanguage",
             shareSuccess: "網站連結已複製。",
             installPending: "查看下載方式",
             installDownload: "立刻下載",
@@ -1172,7 +1172,7 @@ const APP_LINKS = {
             ctaTitle: "Download Slanguage Now",
             ctaDescPending: "Slanguage is available now. Choose the App Store for iOS or Google Play for Android and download now.",
             ctaDescLive: "Slanguage is available now. Choose the App Store for iOS or Google Play for Android and download now.",
-            shareLabel: "↗ Share Slanguage",
+            shareLabel: "Share Slanguage",
             shareSuccess: "Website link copied.",
             installPending: "View Stores",
             installDownload: "Download Now",
@@ -1381,13 +1381,11 @@ const APP_LINKS = {
         const preferred = preferredStore();
         const preferredUrl = validStoreUrl(APP_LINKS[preferred]) ? APP_LINKS[preferred] : (appleLive ? APP_LINKS.appStore : (googleLive ? APP_LINKS.googlePlay : ''));
         const heroCta = document.getElementById('hero-primary-cta');
-        heroCta.href = preferredUrl || '#download';
+        // 首頁主 CTA 永遠帶使用者到站內下載區，由使用者自行選擇商店。
+        heroCta.href = '#download';
         heroCta.innerText = preferredUrl ? t.installDownload : t.heroPrimary;
-        if (preferredUrl) {
-            heroCta.target = '_blank'; heroCta.rel = 'noopener noreferrer';
-        } else {
-            heroCta.removeAttribute('target'); heroCta.removeAttribute('rel');
-        }
+        heroCta.removeAttribute('target');
+        heroCta.removeAttribute('rel');
         document.getElementById('install-primary').innerText = preferredUrl ? t.installDownload : t.installPending;
         document.getElementById('install-subtitle').innerText = anyLive
             ? (lang === 'zh' ? '選擇商店，立即下載' : 'Choose a store and download')
@@ -1446,14 +1444,9 @@ const APP_LINKS = {
     });
 
     document.getElementById('install-primary').addEventListener('click', () => {
-        const key = preferredStore();
-        const preferredUrl = validStoreUrl(APP_LINKS[key]) ? APP_LINKS[key] : (validStoreUrl(APP_LINKS.appStore) ? APP_LINKS.appStore : APP_LINKS.googlePlay);
-        if (validStoreUrl(preferredUrl)) {
-            window.open(preferredUrl, '_blank', 'noopener,noreferrer');
-        } else {
-            document.getElementById('download').scrollIntoView({ behavior: 'smooth' });
-            // Waitlist removed after launch.
-        }
+        // 固定下載列只捲動到官網下載區；真正的商店選擇交由 iOS / Android 下載按鈕。
+        const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+        document.getElementById('download').scrollIntoView({ behavior, block: 'start' });
     });
 
     document.getElementById('share-button').addEventListener('click', async () => {
