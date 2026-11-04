@@ -113,10 +113,10 @@
             },
             {
               "@type": "Question",
-              "name": "Slanguage 什麼時候可以下載？",
+              "name": "Slanguage 可以在哪裡下載？",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。"
+                "text": "Slanguage 已正式在 App Store（iOS）與 Google Play（Android）上架。點擊本頁的商店按鈕即可立刻下載。"
               }
             }
           ]
@@ -617,7 +617,12 @@
     }
     .store-link:not(.is-disabled):hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(30,45,75,.12); }
     .store-link.is-disabled { opacity: 0.52; cursor: pointer; }
-    .store-link svg { width: 24px; height: 24px; fill: #1c1c1e; }
+    .store-link svg { width: 30px; height: 30px; flex-shrink: 0; }
+    .store-link[data-store="apple"] svg path { fill: #0A84FF; }
+    .store-link[data-store="apple"] { background: linear-gradient(145deg, #EFF7FF, #F2F2F7); }
+    .store-link[data-store="google"] { background: linear-gradient(145deg, #F4FFF8, #F2F2F7); }
+    .store-link:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+    .download-actions { margin-top: 22px; }
     .store-link span { text-align: left; line-height: 1.3; font-size: 0.85rem; color: #8e8e93; }
     .store-link b { display: block; font-size: 1.1rem; color: #1c1c1e; }
 
@@ -764,10 +769,10 @@
         </h1>
         <p class="hero-subtitle" id="h-sub-elements">解鎖課本學不到的道地口語、潮流俚語與職場溝通，讓你的語言表達更貼近當地人的真實使用情境。</p>
         <div class="hero-actions">
-            <a class="primary-cta" id="hero-primary-cta" href="#download" data-track="hero_primary">搶先取得 App</a>
+            <a class="primary-cta" id="hero-primary-cta" href="#download" data-track="hero_primary">立刻下載 App</a>
             <a class="secondary-cta" id="hero-secondary-cta" href="#comparison" data-track="hero_demo">看看翻譯示範</a>
         </div>
-        <p class="hero-proof" id="hero-proof">支援 iOS 與 Android｜上架通知免費訂閱</p>
+        <p class="hero-proof" id="hero-proof">已於 App Store 與 Google Play 上架｜立刻下載</p>
     </div>
     <div class="hero-right">
         <div class="phone-mockup hero-phone">
@@ -929,38 +934,38 @@
             <div class="faq-answer" id="faq-a-4">Slanguage 的目標正是協助理解與產生課本較少收錄的口語、俚語與流行表達；實際結果仍會依輸入內容、語境與支援範圍而異。</div>
         </details>
         <details class="faq-item">
-            <summary id="faq-q-5">Slanguage 什麼時候可以下載？</summary>
-            <div class="faq-answer" id="faq-a-5">Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。</div>
+            <summary id="faq-q-5">Slanguage 可以在哪裡下載？</summary>
+            <div class="faq-answer" id="faq-a-5">Slanguage 已正式在 App Store（iOS）與 Google Play（Android）上架。點擊本頁的商店按鈕即可立刻下載。</div>
         </details>
     </div>
 </section>
 
 <section class="cta-section" id="download" aria-labelledby="cta-title">
-    <span class="launch-badge" id="launch-badge">App Store・Google Play 上架準備中</span>
-    <h2 id="cta-title">搶先取得 Slanguage</h2>
-    <p id="cta-desc">上架前可免費訂閱通知；上架後，本區按鈕會直接帶你前往正確的 App 商店。</p>
+    <span class="launch-badge" id="launch-badge">Slanguage 已正式上架・立刻下載</span>
+    <h2 id="cta-title">立刻下載 Slanguage</h2>
+    <p id="cta-desc">Slanguage 已在 App Store 與 Google Play 上架，選擇你的裝置平台，立刻下載。</p>
     
     <div class="store-btns">
-        <a id="app-store-link" class="store-link is-disabled" href="#waitlistForm" data-store="apple" data-track="app_store">
+        <a id="app-store-link" class="store-link" href="https://apps.apple.com/tw/app/slanguage-speak-like-a-native/id6783364234" target="_blank" rel="noopener noreferrer" data-store="apple" data-track="app_store">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5,12.5c0-2.3,1.9-3.4,2-3.5c-1.1-1.5-2.7-1.8-3.3-1.8c-1.4-0.1-2.8,0.8-3.6,0.8c-0.7,0-1.9-0.8-3.1-0.8c-1.5,0-3,0.9-3.8,2.2c-1.6,2.7-0.4,6.7,1.1,9c0.8,1.1,1.7,2.3,2.9,2.3c1.1,0,1.5-0.7,2.9-0.7c1.4,0,1.8,0.7,2.9,0.7c1.2,0,2-1.1,2.8-2.2c0.9-1.3,1.2-2.5,1.2-2.6C21.5,15.7,17.5,14.2,17.5,12.5z M14.6,6.3c0.6-0.8,1-1.9,0.9-2.9c-0.9,0-2,0.6-2.6,1.4c-0.6,0.7-1,1.8-0.9,2.8C13,7.7,14,7.1,14.6,6.3z"/></svg>
-            <span id="store-apple">敬請期待<b>App Store</b></span>
+            <span id="store-apple">立刻下載<b>App Store</b></span>
         </a>
-        <a id="google-play-link" class="store-link is-disabled" href="#waitlistForm" data-store="google" data-track="google_play">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6,20.5l14.2-8L3.6,4.5c-0.3-0.2-0.6-0.1-0.6,0.2v15.5C3,20.6,3.3,20.7,3.6,20.5z M18.4,12l2.6-1.5c0.4-0.2,0.4-0.8,0-1L3.6,1.1C3.3,0.9,3,1.1,3,1.4v0.9l14.2,8L18.4,12z"/></svg>
-            <span id="store-google">敬請期待<b>Google Play</b></span>
+        <a id="google-play-link" class="store-link" href="https://play.google.com/store/apps/details?id=com.swipeuplabs.slanguage" target="_blank" rel="noopener noreferrer" data-store="google" data-track="google_play">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="#26B9EE" d="M3.8 2.3V21.7L13.2 12Z"/>
+                <path fill="#20BD66" d="M3.8 2.3L18 10.1L13.2 12Z"/>
+                <path fill="#F9C63C" d="M13.2 12L18 10.1L21.1 11.8Q21.5 12 21.1 12.2L18 14.1Z"/>
+                <path fill="#F34F50" d="M3.8 21.7L13.2 12L18 14.1Z"/>
+            </svg>
+            <span id="store-google">立刻下載<b>Google Play</b></span>
         </a>
     </div>
 
-    <div class="email-box">
-        <form id="waitlistForm" class="input-group">
-            <input type="email" id="emailField" autocomplete="email" inputmode="email" aria-label="Email" required>
-            <button type="submit" class="submit-btn" id="btn-submit">通知我</button>
-        </form>
-        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        <p class="privacy-note" id="privacy-note">Email 僅用於 Slanguage 上架通知，不會顯示於網站上。</p>
+    <div class="download-actions">
         <div class="cta-utility">
             <button type="button" class="share-button" id="share-button" data-track="share">↗ 分享 Slanguage</button>
         </div>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
     </div>
 </section>
 </main>
@@ -971,7 +976,7 @@
         <strong id="install-title">Slanguage | 怎麼說</strong>
         <span id="install-subtitle">道地外語表達與語氣切換</span>
     </div>
-    <button type="button" class="install-button" id="install-primary" data-track="sticky_download">上架通知</button>
+    <button type="button" class="install-button" id="install-primary" data-track="sticky_download">立刻下載</button>
 </div>
 
 <footer>
@@ -1031,9 +1036,9 @@ const APP_LINKS = {
             navDemo: "查看翻譯示範",
             navFaq: "常見問題",
             navDownload: "下載 App",
-            heroPrimary: "搶先取得 App",
+            heroPrimary: "立刻下載 App",
             heroSecondary: "看看翻譯示範",
-            heroProof: "支援 iOS 與 Android｜上架通知免費訂閱",
+            heroProof: "已於 App Store 與 Google Play 上架｜立刻下載",
             aboutEyebrow: "WHY SLANGUAGE",
             aboutTitle: "最道地的外語在地表達與語氣切換",
             aboutDesc: "Slanguage 不只翻譯字面意思，更把地區差異、文化語境與說話對象納入考量，讓你在旅行、交友與工作場合都能找到更自然的外語說法。",
@@ -1064,40 +1069,31 @@ const APP_LINKS = {
                 "Slanguage 可以切換哪些語氣？",
                 "Slanguage 支援哪些語言與地區？",
                 "Slanguage 能翻譯俚語、縮寫與流行用語嗎？",
-                "Slanguage 什麼時候可以下載？"
+                "Slanguage 可以在哪裡下載？"
             ],
             faqAnswers: [
                 "一般翻譯工具多半著重字面正確，Slanguage 更重視實際使用情境、地區差異與說話語氣，協助你把生硬句子改成更自然的在地表達。",
                 "你可以依情境查看日常標準、潮流俚語、職場商務等不同表達方式，選擇更符合對象與場合的說法。",
                 "Slanguage 規劃支援 30+ 個國家與地區，並依不同地區的慣用語、文化與表達方式提供更貼近當地人的翻譯結果。",
                 "Slanguage 的目標正是協助理解與產生課本較少收錄的口語、俚語與流行表達；實際結果仍會依輸入內容、語境與支援範圍而異。",
-                "Slanguage 正在準備於 App Store 與 Google Play 上架。你可以在本頁留下 Email，上架時接收通知。"
+                "Slanguage 已正式在 App Store（iOS）與 Google Play（Android）上架。點擊本頁的商店按鈕即可立刻下載。"
             ],
-            privacyNote: "Email 僅用於 Slanguage 上架通知，不會顯示於網站上。",
             footerPrivacy: "隱私權政策",
             footerTerms: "服務條款",
             footerSupport: "支援",
             footerLegalAria: "網站政策與支援連結",
             compTitle: "一鍵切換，掌控說話語氣",
             compSubtitle: "點擊下方不同情境，看 Slanguage 如何在實機上為你打破生硬對話：",
-            launchBadgePending: "App Store・Google Play 上架準備中",
-            launchBadgeLive: "Slanguage 現已開放下載",
-            ctaTitle: "搶先取得 Slanguage",
-            ctaDescPending: "上架前可免費訂閱通知；上架後，本區按鈕會直接帶你前往正確的 App 商店。",
-            ctaDescLive: "選擇你的裝置平台，立即前往 App Store 或 Google Play 下載 Slanguage。",
+            launchBadgePending: "Slanguage 已正式上架",
+            launchBadgeLive: "Slanguage 已正式上架・立刻下載",
+            ctaTitle: "立刻下載 Slanguage",
+            ctaDescPending: "Slanguage 已在 App Store 與 Google Play 上架，選擇你的裝置平台，立刻下載。",
+            ctaDescLive: "Slanguage 已在 App Store 與 Google Play 上架，選擇你的裝置平台，立刻下載。",
             shareLabel: "↗ 分享 Slanguage",
             shareSuccess: "網站連結已複製。",
-            statusSending: "正在登記上架通知…",
-            statusSuccess: "登記完成！Slanguage 上架時會寄信通知你。",
-            statusExisting: "你已登記過上架通知。",
-            installPending: "上架通知",
-            installDownload: "立即下載",
-            btnSub: "通知我",
-            btnSending: "傳送中...",
-            alertSuccess: "預約成功！正式上架時我們將會第一時間通知您。",
-            alertFail: "傳送失敗，請確認網路連線或稍後再試。",
-            placeholder: "請輸入您的 Email 信箱",
-            storeExpect: "[敬請期待]",
+            installPending: "查看下載方式",
+            installDownload: "立刻下載",
+            storeExpect: "暫時無法下載",
             labels: ["課本教你的", "日常標準", "潮流俚語 🔥", "職場商務"],
             prefixes: ["情境", "情境", "情境"],
             exTitle: ["表達理解、知道了", "想離開某個地方", "稱讚衣服很好看"],
@@ -1123,9 +1119,9 @@ const APP_LINKS = {
             navDemo: "Translation Demo",
             navFaq: "FAQ",
             navDownload: "Download",
-            heroPrimary: "Get Early Access",
+            heroPrimary: "Download Now",
             heroSecondary: "See the Demo",
-            heroProof: "For iOS and Android | Free launch updates",
+            heroProof: "Available on the App Store & Google Play | Download Now",
             aboutEyebrow: "WHY SLANGUAGE",
             aboutTitle: "Authentic Local Expressions with Tone Switching",
             aboutDesc: "Slanguage goes beyond literal meaning by considering regional usage, cultural context, and who you are speaking to—helping you sound more natural while traveling, socializing, or working.",
@@ -1156,40 +1152,31 @@ const APP_LINKS = {
                 "Which tones can Slanguage switch between?",
                 "Which languages and regions does Slanguage support?",
                 "Can Slanguage translate slang and abbreviations?",
-                "When will Slanguage be available?"
+                "Where can I download Slanguage?"
             ],
             faqAnswers: [
                 "Typical translators focus mainly on literal accuracy. Slanguage also considers real usage, regional differences, and speaking tone to turn stiff sentences into more natural local expressions.",
                 "Depending on the context, you can compare standard everyday, Gen Z slang, and business expressions and choose wording that better fits the audience and situation.",
                 "Slanguage is planned to support 30+ countries and regions, with results adapted to regional usage, culture, and communication style.",
                 "Slanguage is designed to help with conversational language, slang, abbreviations, and current expressions that textbooks may not cover. Results can vary by input, context, and supported scope.",
-                "Slanguage is being prepared for release on the App Store and Google Play. Leave your email on this page to receive a launch notification."
+                "Slanguage is available on the App Store for iOS and Google Play for Android. Use the store links on this page to download it now."
             ],
-            privacyNote: "Your email will only be used for the Slanguage launch notification and will not be displayed on this website.",
             footerPrivacy: "Privacy Policy",
             footerTerms: "Terms of Service",
             footerSupport: "Support",
             footerLegalAria: "Legal and support links",
             compTitle: "One Tap to Switch Tones",
             compSubtitle: "Click the scenarios below to see how Slanguage dynamic UI transforms expressions:",
-            launchBadgePending: "Preparing for App Store and Google Play",
-            launchBadgeLive: "Slanguage is now available",
-            ctaTitle: "Get Slanguage",
-            ctaDescPending: "Join the free launch list now. Once the app is live, these buttons will take you directly to the right app store.",
-            ctaDescLive: "Choose your platform and download Slanguage from the App Store or Google Play.",
+            launchBadgePending: "Slanguage is now available",
+            launchBadgeLive: "Slanguage is now available · Download Now",
+            ctaTitle: "Download Slanguage Now",
+            ctaDescPending: "Slanguage is available now. Choose the App Store for iOS or Google Play for Android and download now.",
+            ctaDescLive: "Slanguage is available now. Choose the App Store for iOS or Google Play for Android and download now.",
             shareLabel: "↗ Share Slanguage",
             shareSuccess: "Website link copied.",
-            statusSending: "Joining the launch list…",
-            statusSuccess: "You're on the list! We'll email you when Slanguage launches.",
-            statusExisting: "You have already joined the launch list.",
-            installPending: "Launch Alert",
-            installDownload: "Download",
-            btnSub: "Notify Me",
-            btnSending: "Sending...",
-            alertSuccess: "Success! You are on the list.",
-            alertFail: "Something went wrong. Please try again.",
-            placeholder: "Enter your email address",
-            storeExpect: "[Coming Soon]",
+            installPending: "View Stores",
+            installDownload: "Download Now",
+            storeExpect: "Temporarily unavailable",
             labels: ["Your Input", "Standard", "Gen Z Slang 🔥", "Business"],
             prefixes: ["Topic", "Topic", "Topic"],
             exTitle: ["Expressing Understanding", "Wanting to Leave", "Complimenting an Outfit"],
@@ -1259,7 +1246,6 @@ const APP_LINKS = {
         document.getElementById('faq-eyebrow').innerText = t.faqEyebrow;
         document.getElementById('faq-title').innerText = t.faqTitle;
         document.getElementById('faq-intro').innerText = t.faqIntro;
-        document.getElementById('privacy-note').innerText = t.privacyNote;
         const legalLang = lang === 'zh' ? 'zh-TW' : 'en';
 
         const footerPrivacy = document.getElementById('footer-privacy');
@@ -1296,12 +1282,10 @@ const APP_LINKS = {
         document.getElementById('comp-subtitle').innerText = t.compSubtitle;
         document.getElementById('cta-title').innerText = t.ctaTitle;
         document.getElementById('share-button').innerText = t.shareLabel;
-        document.getElementById('btn-submit').innerText = t.btnSub;
         updateDownloadExperience();
         
         document.getElementById('h-sub-elements').innerText = t.subtitle;
 
-        document.getElementById('emailField').placeholder = t.placeholder;
         // 商店按鈕文字與連結由 updateDownloadExperience() 統一處理。
         
         document.getElementById('hero-input-tag').innerText = t.labels[0];
@@ -1343,7 +1327,7 @@ const APP_LINKS = {
     function configureStoreLink(element, url, fallbackLabel, liveLabel) {
         const isLive = validStoreUrl(url);
         element.classList.toggle('is-disabled', !isLive);
-        element.href = isLive ? url : '#waitlistForm';
+        element.href = isLive ? url : '#download';
         if (isLive) {
             element.target = '_blank';
             element.rel = 'noopener noreferrer';
@@ -1389,8 +1373,8 @@ const APP_LINKS = {
         const appleLive = validStoreUrl(APP_LINKS.appStore);
         const googleLive = validStoreUrl(APP_LINKS.googlePlay);
         const anyLive = appleLive || googleLive;
-        configureStoreLink(document.getElementById('app-store-link'), APP_LINKS.appStore, t.storeExpect, lang === 'zh' ? '立即下載' : 'Download on the');
-        configureStoreLink(document.getElementById('google-play-link'), APP_LINKS.googlePlay, t.storeExpect, lang === 'zh' ? '立即下載' : 'Get it on');
+        configureStoreLink(document.getElementById('app-store-link'), APP_LINKS.appStore, t.storeExpect, lang === 'zh' ? '立刻下載' : 'Download on the');
+        configureStoreLink(document.getElementById('google-play-link'), APP_LINKS.googlePlay, t.storeExpect, lang === 'zh' ? '立刻下載' : 'Get it on');
 
         document.getElementById('launch-badge').innerText = anyLive ? t.launchBadgeLive : t.launchBadgePending;
         document.getElementById('cta-desc').innerText = anyLive ? t.ctaDescLive : t.ctaDescPending;
@@ -1457,56 +1441,6 @@ const APP_LINKS = {
         if(titleEl) titleEl.classList.add('animate-fade-in');
     }, 100);
 
-    // Form submission
-    document.getElementById('waitlistForm').onsubmit = function(e) {
-        e.preventDefault();
-        const emailInput = document.getElementById('emailField');
-        const email = emailInput.value.trim();
-        const submitBtn = document.getElementById('btn-submit');
-        const t = translations[lang];
-        
-        if (!email) return;
-
-        submitBtn.innerText = t.btnSending;
-        submitBtn.disabled = true;
-        emailInput.disabled = true;
-        const status = document.getElementById('form-status');
-        status.className = 'form-status';
-        status.innerText = t.statusSending;
-
-        const gasUrl = "https://script.google.com/macros/s/AKfycbxTJ-1DGUuSJaOBJLNA5Ke-cbIkjYqEGUZDYb-ySQ2wKCB4mn2cHQdURwohQjT6oac/exec"; 
-
-        const formData = new URLSearchParams();
-        formData.append("email", email);
-
-        fetch(gasUrl, {
-            method: "POST",
-            mode: "no-cors",
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded"
-            },
-            body: formData
-        })
-        .then(() => {
-            this.reset();
-            localStorage.setItem('slanguage_waitlist_joined', '1');
-            status.className = 'form-status success';
-            status.innerText = t.statusSuccess;
-            trackEvent('waitlist_success');
-        })
-        .catch(err => {
-            console.error("Submission error:", err);
-            status.className = 'form-status error';
-            status.innerText = t.alertFail;
-            trackEvent('waitlist_error');
-        })
-        .finally(() => {
-            submitBtn.innerText = t.btnSub;
-            submitBtn.disabled = false;
-            emailInput.disabled = false;
-        });
-    };
-
     document.querySelectorAll('[data-track]').forEach(element => {
         element.addEventListener('click', () => trackEvent(element.dataset.track || 'click', element.getAttribute('href') || ''));
     });
@@ -1518,7 +1452,7 @@ const APP_LINKS = {
             window.open(preferredUrl, '_blank', 'noopener,noreferrer');
         } else {
             document.getElementById('download').scrollIntoView({ behavior: 'smooth' });
-            setTimeout(() => document.getElementById('emailField').focus(), 450);
+            // Waitlist removed after launch.
         }
     });
 
@@ -1552,11 +1486,6 @@ const APP_LINKS = {
     }
 
     updateUI();
-    if (localStorage.getItem('slanguage_waitlist_joined') === '1') {
-        const status = document.getElementById('form-status');
-        status.className = 'form-status success';
-        status.innerText = translations[lang].statusExisting;
-    }
 </script>
 
 </body>
