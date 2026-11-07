@@ -1,0 +1,13 @@
+Slanguage 雙語首頁更新包｜2026-11-07｜準備部署，尚未發布
+來源：SwipeUpLabs/slanguage-web main/index.html，Git blob SHA a64bce2c6d470e1e041bad877eae3d97815290aa
+
+上傳至 GitHub Repository SwipeUpLabs/slanguage-web 的 main 分支：
+1. 根目錄 index.html（覆蓋）→ 英文首頁
+2. zh-tw/index.html（新增資料夾與檔案）→ 繁體中文首頁
+3. 根目錄 sitemap.xml（覆蓋）→ 新增語言對應、支援頁
+
+保留：logo.png、og-image.png、robots.txt、privacy/、terms/、support.html、assets/ 等其他檔案。
+建議一次完成三個檔案的 commit，以免中文頁暫時不可存取。
+部署後確認 / 和 /zh-tw/ 相互切換、手機版、商店連結、FAQ、SEO canonical / hreflang、法律頁。
+GitHub Search Console：使用「網址審查」分別要求 / 與 /zh-tw/ 收錄，並重新提交 sitemap.xml。
+不要將此包直接解壓在已有 index.html 的 /zh-tw/ 內。
